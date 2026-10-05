@@ -1,0 +1,6 @@
+start: 2026-10-05 11:01 battery 85% energy 37300000 uWh
+end:   2026-10-05 11:31 battery 85% energy 37230000 uWh
+full:  43420000 uWh
+elapsed: 0.50 h, drop: 0.16% of full, rate: 0.32 %/h (7.7 %/day)
+S0ix residency over the period: 99%
+suspends during the period: 1

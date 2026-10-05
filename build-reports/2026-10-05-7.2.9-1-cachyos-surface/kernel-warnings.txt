@@ -1,0 +1,16 @@
+[NEW] [ 1774.951741] kernel: surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[benign] [ 1774.952195] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[benign] [ 1801.449125] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[benign] [ 1803.435179] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[NEW] [ 2862.806908] kernel: surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[benign] [ 2862.807378] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[benign] [ 2862.955049] kernel: ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[benign] [ 2862.964080] kernel: ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[NEW] [ 2870.905442] kernel: surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[benign] [ 2870.907229] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[NEW] [ 2879.364767] kernel: surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[benign] [ 2879.365409] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[benign] [ 2901.466034] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[benign] [ 2904.446653] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[benign] [ 3426.478902] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[NEW] [ 3457.683173] kernel: surface_aggregator_tablet_mode_switch 01:26:01:00:01: unknown device posture for type-cover: 0

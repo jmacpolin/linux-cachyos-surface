@@ -1,0 +1,13 @@
+00:00:01:0e:00 surface_aggregator_subsystem_hub
+01:02:01:01:00 surface_battery
+01:02:01:01:01 surface_ac
+01:03:01:00:01 surface_platform_profile
+01:03:01:00:02 surface_temp
+01:05:01:01:01 surface_fan
+01:15:01:06:00 surface_hid
+01:15:01:07:00 surface_hid
+01:15:02:01:00 surface_hid
+01:15:02:02:00 surface_hid
+01:15:02:03:00 surface_hid
+01:15:02:05:00 surface_hid
+01:26:01:00:01 surface_aggregator_tablet_mode_switch

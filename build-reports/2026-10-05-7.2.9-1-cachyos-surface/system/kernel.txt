@@ -1,0 +1,11 @@
+Linux 7.2.9-1-cachyos-surface #1 SMP PREEMPT_DYNAMIC Mon, 05 Oct 2026 03:41:59 +0000 x86_64 GNU/Linux
+Linux version 7.2.9-1-cachyos-surface (linux-cachyos-surface@cachyos) (clang version 23.1.1, LLD 23.1.1) #1 SMP PREEMPT_DYNAMIC Mon, 05 Oct 2026 03:41:59 +0000
+
+package: linux-cachyos-surface
+Name            : linux-cachyos-surface
+Version         : 7.2.9-1
+Packager        : Unknown Packager
+Build Date      : Sun 04 Oct 2026 08:41:59 PM PDT
+Install Date    : Sun 04 Oct 2026 10:53:51 PM PDT
+
+cmdline: quiet nowatchdog splash rw rootflags=subvol=/@ rd.luks.uuid=<uuid> root=/dev/mapper/luks-<uuid> pci=hpiosize=0 i915.enable_psr=0 rcutree.enable_rcu_lazy=1

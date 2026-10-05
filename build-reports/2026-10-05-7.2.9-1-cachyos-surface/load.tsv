@@ -1,0 +1,5 @@
+profile	avg_pkg_watts	max_temp_c	max_fan_rpm	avg_mhz
+low-power	6.2	36	0	1098
+balanced	11.1	46	0	1833
+balanced-performance	11.3	46	0	1842
+performance	36.8	96	0	3240

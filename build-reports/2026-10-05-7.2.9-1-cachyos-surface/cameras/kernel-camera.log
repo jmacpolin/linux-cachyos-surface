@@ -1,0 +1,55 @@
+[    4.068015] kernel: intel-ipu6 0000:00:05.0: enabling device (0000 -> 0002)
+[    4.078021] kernel: intel-ipu6 0000:00:05.0: Found supported sensor OVTI5693:00
+[    4.080488] kernel: intel-ipu6 0000:00:05.0: Found supported sensor OVTID858:00
+[    4.080657] kernel: intel-ipu6 0000:00:05.0: Connected 2 cameras
+[    4.080809] kernel: intel-ipu6 0000:00:05.0: Sending BOOT_LOAD to CSE
+[    4.090012] kernel: intel-ipu6 0000:00:05.0: Sending AUTHENTICATE_RUN to CSE
+[    4.139032] kernel: int3472-discrete INT3472:00: GPIO type 0x08 detected on pin 0x44
+[    4.142132] kernel: int3472-discrete INT3472:00:   con_id=pwr1, flags=0x0
+[    4.143490] kernel: int3472-discrete INT3472:00:   register_regulator returned: 0
+[    4.144622] kernel: ov13858 i2c-OVTID858:00: Powering up sensor
+[    4.144753] kernel: ov13858 i2c-OVTID858:00: Clock enabled
+[    4.148214] kernel: ov13858 i2c-OVTID858:00: Regulators enabled
+[    4.159010] kernel: intel-ipu6 0000:00:05.0: CSE authenticate_run done
+[    4.159243] kernel: intel-ipu6 0000:00:05.0: IPU6-v3[465d] hardware version 5
+[    4.180030] kernel: ov13858 i2c-OVTID858:00: Reset de-asserted, sensor should be ready
+[    4.180239] kernel: ov13858 i2c-OVTID858:00: Attempting to read chip ID from register 0x300a
+[    4.180375] kernel: ov13858 i2c-OVTID858:00: Chip ID read result: ret=0, val=0x00d855 (expected 0x00d855)
+[    4.180497] kernel: ov13858 i2c-OVTID858:00: Chip ID verified successfully!
+[    4.180621] kernel: ov13858 i2c-OVTID858:00: upside-down module, rotation=180
+[    4.180740] kernel: ov13858 i2c-OVTID858:00: Powering down sensor
+[    4.180862] kernel: ov13858 i2c-OVTID858:00: Regulators disabled
+[    4.180980] kernel: ov13858 i2c-OVTID858:00: Clock disabled
+[    4.193016] kernel: ov5693 i2c-OVTI5693:00: supply dovdd not found, using dummy regulator
+[    4.193196] kernel: ov5693 i2c-OVTI5693:00: supply dvdd not found, using dummy regulator
+[  157.364113] kernel: ov13858 i2c-OVTID858:00: Powering up sensor
+[  157.364578] kernel: ov13858 i2c-OVTID858:00: Clock enabled
+[  157.367061] kernel: ov13858 i2c-OVTID858:00: Regulators enabled
+[  157.398298] kernel: ov13858 i2c-OVTID858:00: Reset de-asserted, sensor should be ready
+[  181.219023] kernel: ov13858 i2c-OVTID858:00: Powering down sensor
+[  181.219645] kernel: ov13858 i2c-OVTID858:00: Regulators disabled
+[  181.219888] kernel: ov13858 i2c-OVTID858:00: Clock disabled
+[  193.465188] kernel: ov13858 i2c-OVTID858:00: Powering up sensor
+[  193.466369] kernel: ov13858 i2c-OVTID858:00: Clock enabled
+[  193.470326] kernel: ov13858 i2c-OVTID858:00: Regulators enabled
+[  193.498198] kernel: ov13858 i2c-OVTID858:00: Reset de-asserted, sensor should be ready
+[  202.738053] kernel: ov13858 i2c-OVTID858:00: Powering down sensor
+[  202.738507] kernel: ov13858 i2c-OVTID858:00: Regulators disabled
+[  202.738656] kernel: ov13858 i2c-OVTID858:00: Clock disabled
+[  207.974137] kernel: ov13858 i2c-OVTID858:00: Powering up sensor
+[  207.976049] kernel: ov13858 i2c-OVTID858:00: Clock enabled
+[  207.979144] kernel: ov13858 i2c-OVTID858:00: Regulators enabled
+[  208.008201] kernel: ov13858 i2c-OVTID858:00: Reset de-asserted, sensor should be ready
+[  209.533135] kernel: ov13858 i2c-OVTID858:00: Powering down sensor
+[  209.534117] kernel: ov13858 i2c-OVTID858:00: Regulators disabled
+[  209.534839] kernel: ov13858 i2c-OVTID858:00: Clock disabled
+[ 1774.950319] kernel: intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[ 1774.952195] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[ 2862.805340] kernel: intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[ 2862.807378] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[ 2870.904938] kernel: intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[ 2870.907229] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[ 2879.364222] kernel: intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[ 2879.365409] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[ 3426.478039] kernel: intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[ 3426.478902] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM

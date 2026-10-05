@@ -1,0 +1,8 @@
+tcp_available_congestion_control: reno cubic
+tcp_congestion_control: cubic
+sched_ext: disabled
+thp enabled: [always] madvise never
+thp shmem_enabled: always within_size [advise] never deny force
+
+Startup finished in 5.812s (firmware) + 22.115s (loader) + 813ms (kernel) + 1.671s (initrd) + 10.842s (userspace) = 41.255s 
+graphical.target reached after 10.807s in userspace.

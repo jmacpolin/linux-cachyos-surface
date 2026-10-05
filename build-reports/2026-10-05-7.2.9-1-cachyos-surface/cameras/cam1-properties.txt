@@ -1,0 +1,10 @@
+Using camera \_SB_.PC00.I2C3.CAMF as cam0
+Property: SystemDevices = [ 20737, 20738, 20739, 20740, 20741, 20742, 20743, 20744, 20745, 20746, 20747, 20748, 20749, 20750, 20751, 20752, 20753, 20754, 20755, 20756, 20757, 20758, 20759, 20760, 20761, 20762, 20763, 20764, 20765, 20766, 20767, 20768 ]
+Property: PipelineHandler = simple
+Property: PixelArrayActiveAreas = [ (16, 6)/2592x1944 ]
+Property: PixelArraySize = 2592x1944
+Property: Rotation = 180
+Property: Location = 0 (CameraLocationFront)
+Property: ColorFilterArrangement = 3 (BGGR)
+Property: UnitCellSize = 1400x1400
+Property: Model = ov5693

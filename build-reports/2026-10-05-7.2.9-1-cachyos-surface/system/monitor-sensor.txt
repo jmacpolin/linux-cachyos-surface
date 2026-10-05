@@ -1,0 +1,10 @@
+    Waiting for iio-sensor-proxy to appear
++++ iio-sensor-proxy appeared
+=== Has accelerometer (orientation: normal, tilt: tilted-down)
+=== Has ambient light sensor (value: 0.000000, unit: lux)
+=== No proximity sensor
+=== No compass
+    Light changed: 14.790000 (lux)
+    Light changed: 14.740000 (lux)
+    Light changed: 14.000000 (lux)
+    Light changed: 14.680000 (lux)

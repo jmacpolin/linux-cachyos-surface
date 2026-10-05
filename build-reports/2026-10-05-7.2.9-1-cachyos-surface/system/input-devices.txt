@@ -1,0 +1,28 @@
+Lid Switch
+Video Bus
+Microsoft Surface POS Tablet Mode Switch
+PC Speaker
+gpio-keys
+gpio-keys
+HDA Intel PCH HDMI/DP,pcm=3
+HDA Intel PCH HDMI/DP,pcm=7
+HDA Intel PCH HDMI/DP,pcm=8
+HDA Intel PCH HDMI/DP,pcm=9
+Intel Touch Host Controller
+Intel Touch Host Controller
+Intel Touch Host Controller
+Intel Touch Host Controller Touchscreen
+Intel Touch Host Controller
+Intel Touch Host Controller
+Intel Touch Host Controller Stylus
+Intel Touch Host Controller
+IPTSD Virtual Touchscreen 045E:0C52
+IPTSD Virtual Stylus 045E:0C52
+Microsoft Surface 045E:09AE
+Microsoft Surface 045E:09B0 Keyboard
+Microsoft Surface 045E:09B0
+Microsoft Surface 045E:09B0
+Microsoft Surface 045E:09AF Mouse
+Microsoft Surface 045E:09AF Touchpad
+Microsoft Surface 045E:09AF UNKNOWN
+Microsoft Surface 045E:09AF UNKNOWN

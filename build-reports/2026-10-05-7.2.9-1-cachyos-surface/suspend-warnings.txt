@@ -1,0 +1,25 @@
+== cycle 1
+[benign] [ 4346.198008] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 2
+[benign] [ 4355.055804] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 3
+[benign] [ 4364.551102] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 4
+[benign] [ 4373.259527] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 5
+[NEW] [ 4382.006517] kernel: surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[benign] [ 4382.007050] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[benign] [ 4383.949337] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[benign] [ 4384.938187] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+== cycle 6
+[benign] [ 4390.731795] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 7
+[benign] [ 4399.636637] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 8
+[benign] [ 4408.434224] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+== cycle 9
+[benign] [ 4417.179549] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[benign] [ 4419.393094] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[benign] [ 4420.384075] kernel: surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+== cycle 10
+[benign] [ 4425.905425] kernel: auxiliary intel_ipu6.psys.40: Failed to get runtime PM

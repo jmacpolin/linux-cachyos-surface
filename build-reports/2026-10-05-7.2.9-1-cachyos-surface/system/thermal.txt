@@ -1,0 +1,37 @@
+== hwmon0 nvme
+temp1_input Composite 24850
+temp2_input Sensor 1 24850
+temp3_input Sensor 2 31850
+== hwmon1 surface_fan
+fan1_input  0
+== hwmon2 ADP1
+== hwmon3 BAT1
+== hwmon4 surface_thermal
+temp10_input I_RTS2 30500
+temp11_input I_RTS3 30300
+temp1_input I_RTS1 33600
+temp2_input I_RTS2 32800
+temp3_input I_RTS3 31100
+temp4_input I_RTS4 30100
+temp5_input I_RTS5 30800
+temp6_input I_RTS6 30800
+temp7_input I_RTS7 32800
+temp8_input I_RTS8 31100
+temp9_input I_RTS1 30600
+== hwmon5 coretemp
+temp10_input Core 8 30000
+temp11_input Core 9 30000
+temp12_input Core 10 30000
+temp13_input Core 11 30000
+temp14_input Core 12 34000
+temp15_input Core 13 34000
+temp16_input Core 14 34000
+temp17_input Core 15 34000
+temp1_input Package id 0 34000
+temp2_input Core 0 33000
+temp6_input Core 4 30000
+== hwmon6 iwlwifi_1
+temp1_input  27000
+
+thermal_zone0 x86_pkg_temp 34000
+thermal_zone1 iwlwifi_1 27000

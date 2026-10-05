@@ -1,0 +1,92 @@
+== aplay -l
+**** List of PLAYBACK Hardware Devices ****
+card 0: PCH [HDA Intel PCH], device 0: ALC274 Analog [ALC274 Analog]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 3: HDMI 0 [HDMI 0]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 7: HDMI 1 [HDMI 1]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 8: HDMI 2 [HDMI 2]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 9: HDMI 3 [HDMI 3]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+== arecord -l
+**** List of CAPTURE Hardware Devices ****
+card 0: PCH [HDA Intel PCH], device 0: ALC274 Analog [ALC274 Analog]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+== /proc/asound/cards
+ 0 [PCH            ]: HDA-Intel - HDA Intel PCH
+                      HDA Intel PCH at 0x6125178000 irq 206
+== wpctl status
+PipeWire 'pipewire-0' [1.6.9, <user>@<host>]
+
+Audio
+ ├─ Devices:
+ │      52. Built-in Audio                      [alsa]
+ │  
+ ├─ Sinks:
+ │  *   91. Built-in Audio Analog Stereo        [vol: 0.49]
+ │  
+ ├─ Sources:
+ │  *   92. Built-in Audio Analog Stereo        [vol: 1.00]
+ │  
+ ├─ Filters:
+ │  
+ └─ Streams:
+
+Video
+ ├─ Devices:
+ │      56. ipu6                                [v4l2]
+ │      57. ipu6                                [v4l2]
+ │      58. ipu6                                [v4l2]
+ │      59. ipu6                                [v4l2]
+ │      60. ipu6                                [v4l2]
+ │      61. ipu6                                [v4l2]
+ │      62. ipu6                                [v4l2]
+ │      63. ipu6                                [v4l2]
+ │      64. ipu6                                [v4l2]
+ │      65. ipu6                                [v4l2]
+ │      66. ipu6                                [v4l2]
+ │      67. ipu6                                [v4l2]
+ │      68. ipu6                                [v4l2]
+ │      69. ipu6                                [v4l2]
+ │      70. ipu6                                [v4l2]
+ │      71. ipu6                                [v4l2]
+ │      72. ipu6                                [v4l2]
+ │      73. ipu6                                [v4l2]
+ │      74. ipu6                                [v4l2]
+ │      75. ipu6                                [v4l2]
+ │      76. ipu6                                [v4l2]
+ │      77. ipu6                                [v4l2]
+ │      78. ipu6                                [v4l2]
+ │      79. ipu6                                [v4l2]
+ │      80. ipu6                                [v4l2]
+ │      81. ipu6                                [v4l2]
+ │      82. ipu6                                [v4l2]
+ │      83. ipu6                                [v4l2]
+ │      84. ipu6                                [v4l2]
+ │      85. ipu6                                [v4l2]
+ │      86. ipu6                                [v4l2]
+ │      87. ipu6                                [v4l2]
+ │      88. Virtual Camera                      [v4l2]
+ │      89. ov5693                              [libcamera]
+ │      90. ov13858                             [libcamera]
+ │  
+ ├─ Sinks:
+ │  
+ ├─ Sources:
+ │  *   96. Built-in Front Camera              
+ │      98. Built-in Back Camera               
+ │  
+ ├─ Filters:
+ │  
+ └─ Streams:
+
+Settings
+ └─ Default Configured Devices:

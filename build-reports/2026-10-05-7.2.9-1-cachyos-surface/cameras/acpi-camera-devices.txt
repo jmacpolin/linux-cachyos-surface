@@ -1,0 +1,5 @@
+OVTI5693:00 status=15 physical_node=i2c-OVTI5693:00
+OVTID858:00 status=15 physical_node=i2c-OVTID858:00
+INT3472:00 status=15 physical_node=INT3472:00
+INT3472:01 status=15 physical_node=INT3472:01
+INT3472:02 status=15 physical_node=INT3472:02

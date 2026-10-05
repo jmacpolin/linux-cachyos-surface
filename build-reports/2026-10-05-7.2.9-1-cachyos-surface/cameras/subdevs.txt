@@ -1,0 +1,6 @@
+v4l-subdev0 Intel IPU6 CSI2 0
+v4l-subdev1 Intel IPU6 CSI2 1
+v4l-subdev2 Intel IPU6 CSI2 2
+v4l-subdev3 Intel IPU6 CSI2 3
+v4l-subdev4 ov5693 3-0036
+v4l-subdev5 ov13858 2-0010

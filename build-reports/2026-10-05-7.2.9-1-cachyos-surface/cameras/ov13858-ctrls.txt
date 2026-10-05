@@ -1,0 +1,24 @@
+
+User Controls
+
+                       exposure 0x00980911 (int)    : min=4 max=3206 step=1 default=3206 value=3206 flags=has-min-max
+                horizontal_flip 0x00980914 (bool)   : default=0 value=1 flags=has-min-max
+                  vertical_flip 0x00980915 (bool)   : default=0 value=1 flags=has-min-max
+
+Camera Controls
+
+             camera_orientation 0x009a0922 (menu)   : min=0 max=2 default=1 value=1 (Back) flags=read-only, has-min-max
+         camera_sensor_rotation 0x009a0923 (int)    : min=180 max=180 step=1 default=180 value=180 flags=read-only, has-min-max
+
+Image Source Controls
+
+              vertical_blanking 0x009e0901 (int)    : min=420 max=31579 step=1 default=2026 value=2026 flags=has-min-max
+            horizontal_blanking 0x009e0902 (int)    : min=132 max=132 step=1 default=132 value=132 flags=read-only, has-min-max
+                  analogue_gain 0x009e0903 (int)    : min=0 max=8191 step=1 default=128 value=8191 flags=has-min-max
+
+Image Processing Controls
+
+                 link_frequency 0x009f0901 (intmenu): min=0 max=1 default=0 value=1 (270000000 0x1017df80) flags=read-only, has-min-max
+                     pixel_rate 0x009f0902 (int64)  : min=216000000 max=432000000 step=1 default=432000000 value=216000000 flags=read-only, has-min-max
+                   test_pattern 0x009f0903 (menu)   : min=0 max=4 default=0 value=0 (Disabled) flags=has-min-max
+                   digital_gain 0x009f0905 (int)    : min=0 max=16384 step=1 default=1024 value=1024 flags=has-min-max

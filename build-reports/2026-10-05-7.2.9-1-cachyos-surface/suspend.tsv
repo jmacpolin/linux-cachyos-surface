@@ -1,0 +1,11 @@
+cycle	result	rtc_wake	suspended_s	hw_sleep_s	slp_s0_s	residency_pct	wake_irq	new_warnings	before	after
+1	ok	yes	59	56	56	94	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+2	ok	yes	61	58	58	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+3	ok	yes	60	57	57	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+4	ok	yes	61	58	58	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+5	issues: 1 new kernel warning(s)	yes	61	58	58	95	9	1	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+6	ok	yes	61	58	58	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+7	ok	yes	60	58	58	96	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+8	ok	yes	61	58	58	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+9	ok	yes	61	58	58	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2
+10	ok	yes	61	58	58	95	9	0	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2	touch=1 iptsd=1 iptsd_inputs=2 cover=1 wifi=1 bt=1 cameras=2

@@ -1,0 +1,13 @@
+wlan0:wifi:connected
+lo:loopback:connected (externally)
+p2p-dev-wlan0:wifi-p2p:disconnected
+0: hci0: Bluetooth
+	Soft blocked: no
+	Hard blocked: no
+1: phy0: Wireless LAN
+	Soft blocked: no
+	Hard blocked: no
+	Powered: yes
+	Discoverable: no
+	DiscoverableTimeout: 0x000000b4 (180)
+	Pairable: no

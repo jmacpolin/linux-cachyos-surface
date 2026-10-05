@@ -1,0 +1,7 @@
+0001:045E:0C52.0012 hid-generic
+0019:045E:005D.0001 hid-generic
+0019:045E:005D.0002 hid-sensor-hub
+0019:045E:0991.0014 hid-generic
+0019:045E:09AE.0013 surface
+0019:045E:09AF.0016 hid-multitouch
+0019:045E:09B0.0015 hid-generic

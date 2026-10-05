@@ -1,0 +1,18 @@
+mem_sleep: [s2idle]
+state: freeze mem disk
+suspend_stats/fail: 0
+suspend_stats/failed_freeze: 0
+suspend_stats/failed_prepare: 0
+suspend_stats/failed_resume: 0
+suspend_stats/failed_resume_early: 0
+suspend_stats/failed_resume_noirq: 0
+suspend_stats/failed_suspend: 0
+suspend_stats/failed_suspend_late: 0
+suspend_stats/failed_suspend_noirq: 0
+suspend_stats/last_failed_dev: 
+suspend_stats/last_failed_errno: 0
+suspend_stats/last_failed_step: 
+suspend_stats/last_hw_sleep: 0
+suspend_stats/max_hw_sleep: 523986009990
+suspend_stats/success: 5
+suspend_stats/total_hw_sleep: 7477004024

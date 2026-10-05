@@ -1,0 +1,7 @@
+iio:device0 als
+iio:device1 incli_3d
+iio:device2 magn_3d
+iio:device3 gyro_3d
+iio:device4 dev_rotation
+iio:device5 accel_3d
+iio:device6 gravity
