@@ -11,6 +11,50 @@ To bump the mainline kernel: pick a tag from [CachyOS/linux/releases](https://gi
 
 _**NOTE:** The configuration files and prebuilt kernels are optimized for X86_64_v3 instruction sets, this should be fine for most Surface devices, but might not work on very old (1st or 2nd gen) devices._
 
+## Tested hardware: Surface Pro 9 (Intel)
+
+The `linux-cachyos-surface` kernel built from this `7.1` branch has been tested daily on one machine. The logs, the final kernel `.config`, the `prepare()` patch log and the test notes are in [`build-reports/2026-10-04-7.1.3-1-cachyos-surface`](https://github.com/jmacpolin/linux-cachyos-surface/tree/7.1-sp9-build-report/build-reports/2026-10-04-7.1.3-1-cachyos-surface) on the `7.1-sp9-build-report` branch.
+
+- **Machine:** Surface Pro 9, 12th-gen Intel (Alder Lake-U, Iris Xe), SKU `Surface_Pro_9_2038`, UEFI 23.102.143, running CachyOS
+- **Kernel:** `7.1.3-1-cachyos-surface`, built 2026-09-21, tested through 2026-10-04
+
+| Build input | Value |
+|---|---|
+| Base kernel | CachyOS pre-patched tarball `cachyos-7.1.3-1` |
+| Surface patches | [`Apiznel/linux-surface@df5430f`](https://github.com/Apiznel/linux-surface/commit/df5430f474d2923c4ff5da745aadbfd0fe4801d7), the source branch of the still-unmerged upstream PR [linux-surface/linux-surface#2178](https://github.com/linux-surface/linux-surface/pull/2178) |
+| This repo | `fdab95a` |
+| Toolchain / options | clang 22.1.8, full LTO, `-O3`, x86-64-v3, 1000 Hz, EEVDF scheduler |
+| Config | `config` + `surface-7.1.config`, with every option that is new in 7.1 (168 prompts) left at its default |
+| Userspace | iptsd 3.1.0, libcamera 0.7.2, linux-firmware 20260916, sof-firmware 2026.09.1 |
+| Extra kernel parameters | `pci=hpiosize=0 i915.enable_psr=0 rcutree.enable_rcu_lazy=1` |
+
+The scheduler is EEVDF, not BORE. The CachyOS tarball doesn't contain the BORE scheduler, so the PKGBUILD's `scripts/config -e SCHED_BORE` does nothing. Upstream `linux-cachyos` behaves the same way: its default kernel is "EEVDF", and BORE is a separate patch for the `bore` variants.
+
+| Feature | Status | Notes |
+|---|---|---|
+| Touchscreen | ✅ Works | `ithc` (legacy mode) + iptsd. Still works after resume; iptsd restarts on each resume, which is expected |
+| Pen | ✅ Works | Pressure and buttons |
+| Type Cover | ✅ Works | Keys, touchpad, backlight, Fn keys |
+| Tablet mode on detach | ✅ Works | |
+| Wi-Fi / Bluetooth | ✅ Works | Intel CNVi (`iwlwifi`), `btusb` |
+| Speakers | ✅ Works | |
+| Microphone | ⚪ Not tested | |
+| Screen brightness | ✅ Works | OS slider, Type Cover Fn keys, and auto-brightness from the ambient light sensor |
+| Suspend / resume (s2idle) | ✅ Works | 5–10 cycles; longest captured sleep 6.7 h; roughly <10 % battery drain per day asleep (estimate) |
+| Charging | ✅ Works | USB-C and Surface Connect |
+| Rear camera (ov13858) | ⚠️ Partial | Streams, but the image is upside down. Fixed by upstream PR [linux-surface/linux-surface#2227](https://github.com/linux-surface/linux-surface/pull/2227), which isn't included yet |
+| Front camera (ov5693) | ⚪ Not tested | Detected by libcamera. Streaming probably needs upstream PR [linux-surface/linux-surface#2171](https://github.com/linux-surface/linux-surface/pull/2171), which isn't included yet |
+| IR camera | ⚪ Not detected | No IR sensor driver loads, and libcamera lists only the front and rear cameras |
+
+These kernel log messages appear on this machine and are harmless:
+
+- `ithc 0000:00:10.6: hid_input_report failed with -16`: about 30 lines right after resume, while the touch device is being recreated.
+- `auxiliary intel_ipu6.psys.40: Failed to get runtime PM`: once per resume.
+- `surface_serial_hub serial0-0: event: unhandled event (... cid: 0x1a ...)`.
+- iptsd logs `Reading from file failed: Input/output error` and restarts on each resume.
+
+To reproduce this build, run `makepkg -si --skipinteg` in `linux-cachyos-surface/` on the `7.1` branch, and press Enter at each new-config-option prompt to accept the default. The PKGBUILD doesn't pin a commit; it builds the tip of `Apiznel/linux-surface`'s `7.1` branch. Check that the tip is still `df5430f` if you want exactly this build.
+
 ## Variants
 
 ### linux-cachyos-surface
