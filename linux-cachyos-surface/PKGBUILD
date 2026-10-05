@@ -168,8 +168,8 @@ fi
 pkgbase="linux-$_pkgsuffix"
 
 pkgbase="$pkgbase"
-_major=7.1
-_minor=3
+_major=7.2
+_minor=9
 #_minorc=$((_minor+1))
 #_rcver=rc8
 pkgver=${_major}.${_minor}
@@ -178,10 +178,10 @@ _stable=${_major}.${_minor}
 #_stablerc=${_major}-${_rcver}
 
 # CachyOS packaging revision of the pre-patched kernel tarball published at
-# https://github.com/CachyOS/linux/releases (e.g. cachyos-6.19.12-2). This
+# https://github.com/CachyOS/linux/releases (e.g. cachyos-7.2.9-2). This
 # is INDEPENDENT of this PKGBUILD's `pkgrel`. Bump when CachyOS re-cuts a
 # release for the same kernel version.
-_tagrel=1
+_tagrel=2
 
 # Top-level directory inside the CachyOS pre-patched kernel tarball, and
 # also the release tag name. The CachyOS/linux release tarball is a vanilla
@@ -199,12 +199,13 @@ _kernuname="${pkgver}-${_pkgsuffix}"
 
 # Surface patches and config fragment. Official linux-surface/linux-surface
 # has no 7.x patches, so this uses the community port from the still-unmerged
-# PR https://github.com/linux-surface/linux-surface/pull/2178
-# (Apiznel/linux-surface, branch 7.1), pinned to the commit that was tested on
-# a Surface Pro 9 (see "Tested hardware" in the README). To bump, move
+# PR https://github.com/linux-surface/linux-surface/pull/2233
+# (Apiznel/linux-surface, branch 7.2, rebased for 7.2.4), pinned by commit.
+# The override-*.patch and local-*.patch files next to this PKGBUILD adapt it
+# to 7.2.9 and add Surface Pro 9 camera fixes (see the README). To bump, move
 # _surface_commit and check the prepare() output for fuzz and rejects.
 _surface_repo="Apiznel/linux-surface"
-_surface_commit=df5430f474d2923c4ff5da745aadbfd0fe4801d7
+_surface_commit=6bcf30a1f5387768f2a5068c7b4330a4f9eb3841
 arch=('x86_64')
 url="https://github.com/jmacpolin/linux-cachyos-surface"
 license=('GPL-2.0-only')
@@ -226,7 +227,7 @@ makedepends=(
 )
 
 _patchsource="https://raw.githubusercontent.com/cachyos/kernel-patches/master/${_major}"
-_nv_ver=590.48.01
+_nv_ver=615.71.09
 _nv_pkg="NVIDIA-Linux-x86_64-${_nv_ver}"
 _nv_open_pkg="NVIDIA-kernel-module-source-${_nv_ver}"
 makedepends+=(git)
@@ -234,6 +235,14 @@ source=(
     "https://github.com/CachyOS/linux/releases/download/${_srcname}/${_srcname}.tar.gz"
     "config"
     "linux-surface::git+https://github.com/${_surface_repo}.git#commit=${_surface_commit}"
+    # Replace Apiznel 7.2 patches whose context or quirk values changed in 7.2.9
+    "override-0003-mwifiex.patch"
+    "override-0010-surface-typecover.patch"
+    "override-0015-hid-surface.patch"
+    # Surface Pro 9 camera fixes not in the patch set yet
+    "local-0100-int3472-sp9-uninitialized-ret.patch"
+    "local-0101-ov13858-sp9-rear-rotation-flip.patch"
+    "local-0102-ov5693-ipu6-mipi-ctrl00.patch"
     )
 
 # LLVM makedepends
@@ -825,8 +834,14 @@ for _p in "${pkgname[@]}"; do
 done
 
 b2sums=('SKIP'
-        '7a0d1d7b504f342b0380352ab9bd98ee12530c7491783181dbafcaf2e7999d6224fed517b5ecc1be9a19a10f94e15fda38fafa41012d0cb3fd651e8f4ee8f6fc'
-        'SKIP')
+        '21343697f5f1647aadbdec8a4aa477b10622e5ae04fa07fcf6f9bab67dece7180872676bdc49a90de5d273c2c13127c5812a7ca67dbd9edce3e26e8c38d358d1'
+        'SKIP'
+        '2cf9f5fd72cc071a4b9b5d57774c69f3c8328d3c89118356923b3fb4fe7016f50897bf989e9cf79242caa3b37c97d7b3978cbf5c00f50d43603610b4b4259e44'
+        '0be4d5e6295ce29129a14c6ef39c8bdab57910d14f3446de79cb89ec6d3931bbae86bd8e091a62b9d103cb0f18f93486bd06bbbaa52d3d7f9a9868bcb8db173b'
+        'bf28cc20e295fd05aeca75026c3e3b78154b408c4dc147eb26c120eab3fff6c73b6416ff2ade8ebdecfa4269ed5541c486c86358183ee6c295086d371efc8d2e'
+        '3376d199de0b01cba5178ef617d9778f70cd29dcc14b4dce111a392df73093a26f4fc97002dc2b624aab7b8a44b197b88610266bc201f5ea9aa8a2fd65f36e94'
+        '7a8802619f755556e9ae71ec59e3ad11ae52f7051de27c8b6b450f28bee41818fd4c92f39ff0df6d218c750a061cafab13b5b94cd99fdc1a61c658849584ad15'
+        '3d9eafd911e24ca61ebf4f4585d24bf3f1e0065f8c10d73fc3e45c4c84b2866a76add5b2f53fb2cf461918912dc2ca4abf084d345e16f5100f462e85c8d8bc10')
 
 # Sources appended conditionally above (LTO, ZFS, NVIDIA, schedulers,
 # profiles) are not checksummed; pad with SKIP so makepkg's integrity check

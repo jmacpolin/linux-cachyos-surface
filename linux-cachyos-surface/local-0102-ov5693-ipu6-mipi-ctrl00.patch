@@ -1,0 +1,66 @@
+From 5f095819af3091c442eb93cb9b0f88564b157b62 Mon Sep 17 00:00:00 2001
+From: Arsalan Naeem <naeemarsalan@gmail.com>
+Date: Mon, 5 Oct 2026 03:09:54 +0000
+Subject: [PATCH] media: i2c: ov5693: set MIPI_CTRL00 clock-lane gate for IPU6
+ front cameras
+
+The mainline ov5693 driver never writes MIPI_CTRL00 (register 0x4800),
+leaving it at its 0x00 power-on default. The IPU3 ISP, where this sensor
+is the front camera of the Surface Pro 5/6/7, accepts that default. On
+the IPU6 Surface devices (Surface Pro 8 and 9, Surface Go 4) the MIPI
+D-PHY does not lock onto the link: the sensor reports streaming, but the
+receiver never gets any CSI-2 packets and capture times out ("stream stop
+time out").
+
+The Windows driver programs 0x2d into this register. Bit sweeps on the
+Surface Pro 8 and Surface Pro 9 showed that bit 5 (clock-lane gate) is
+both necessary and sufficient, so set only that bit, with a
+read-modify-write, before stream-on.
+
+Link: https://github.com/linux-surface/linux-surface/pull/2171
+Link: https://github.com/linux-surface/linux-surface/issues/1893
+Link: https://github.com/linux-surface/linux-surface/issues/2154
+Signed-off-by: Arsalan Naeem <naeemarsalan@gmail.com>
+[linux-cachyos-surface: ported to 7.2.9 and reduced from writing 0x2d to
+ setting bit 5 only, as found on the Surface Pro 9 in the PR thread and
+ as done by the linux-media submission]
+Patchset: cameras
+---
+ drivers/media/i2c/ov5693.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+diff --git a/drivers/media/i2c/ov5693.c b/drivers/media/i2c/ov5693.c
+index 02236f3db..e815e6d8a 100644
+--- a/drivers/media/i2c/ov5693.c
++++ b/drivers/media/i2c/ov5693.c
+@@ -110,6 +110,10 @@
+ #define OV5693_MIN_CROP_WIDTH			2
+ #define OV5693_MIN_CROP_HEIGHT			2
+ 
++/* MIPI control */
++#define OV5693_MIPI_CTRL00_REG			CCI_REG8(0x4800)
++#define OV5693_MIPI_CTRL00_CLK_LANE_GATE	BIT(5)
++
+ /* Test Pattern */
+ #define OV5693_TEST_PATTERN_REG			CCI_REG8(0x5e00)
+ #define OV5693_TEST_PATTERN_ENABLE		BIT(7)
+@@ -611,6 +615,19 @@ static int ov5693_enable_streaming(struct ov5693_device *ov5693, bool enable)
+ {
+ 	int ret = 0;
+ 
++	/*
++	 * Set the CSI-2 clock-lane gate bit of MIPI_CTRL00 before starting the
++	 * stream. With the 0x00 power-on default the IPU3 receiver (Surface Pro
++	 * 5-7) locks onto the link, but the IPU6 D-PHY on the Surface Pro 8/9
++	 * and Surface Go 4 does not: the sensor streams while the receiver gets
++	 * no CSI-2 data and capture times out. Only this bit is needed, so
++	 * update it rather than overwriting the whole register.
++	 */
++	if (enable)
++		cci_update_bits(ov5693->regmap, OV5693_MIPI_CTRL00_REG,
++				OV5693_MIPI_CTRL00_CLK_LANE_GATE,
++				OV5693_MIPI_CTRL00_CLK_LANE_GATE, &ret);
++
+ 	cci_write(ov5693->regmap, OV5693_SW_STREAM_REG,
+ 		  enable ? OV5693_START_STREAMING : OV5693_STOP_STREAMING,
+ 		  &ret);

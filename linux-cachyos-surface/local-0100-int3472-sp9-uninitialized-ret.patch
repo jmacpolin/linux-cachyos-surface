@@ -1,0 +1,46 @@
+From 5fb04a52fef669a898e5066930e850cb41084584 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 5 Oct 2026 03:13:08 +0000
+Subject: [PATCH] platform/x86: int3472: discrete: fix uninitialized ret for
+ Surface Pro 9 GPIO type 0x11
+
+The experimental "Add camera support for Surface Pro 9" patch adds a
+case for GPIO type 0x11 that only breaks out of the inner switch, so
+'ret' is then read uninitialized by "if (ret) gpiod_put(gpio)" and by
+"if (ret < 0) return dev_err_probe(..., err_msg)", where err_msg is
+uninitialized too. clang reports -Wsometimes-uninitialized here. Set ret
+to 0 for this type, so the GPIO is kept and probing continues, which is
+how the Surface Pro 9 cameras behave when the value happens to be zero.
+
+Also fix the two format strings in the type 0x08 branch that clang
+-Wformat flags (unsigned long printed with %x, and a missing '%').
+
+Patchset: cameras
+---
+ drivers/platform/x86/intel/int3472/discrete.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/platform/x86/intel/int3472/discrete.c b/drivers/platform/x86/intel/int3472/discrete.c
+index b2a54733d..efd8ac8f6 100644
+--- a/drivers/platform/x86/intel/int3472/discrete.c
++++ b/drivers/platform/x86/intel/int3472/discrete.c
+@@ -389,16 +389,17 @@ static int skl_int3472_handle_gpio_resources(struct acpi_resource *ares,
+ 			break;
+ 		case 0x08:  /* Surface Pro 9 - treat as power*/
+ 		    dev_info(int3472->dev, "GPIO type 0x%02x detected on pin 0x%02x\n", type, agpio->pin_table[0]);
+-		    dev_info(int3472->dev, "  con_id=%s, flags=0x%x\n", con_id, gpio_flags);
++		    dev_info(int3472->dev, "  con_id=%s, flags=0x%lx\n", con_id, gpio_flags);
+ 		    ret = skl_int3472_register_regulator(int3472, gpio,
+ 			 GPIO_REGULATOR_ENABLE_TIME,
+ 			 con_id, NULL);
+ 		    dev_info(int3472->dev, "  register_regulator returned: %d\n", ret);
+ 		    if (ret) {
+-			dev_err(int3472->dev, "Failed to register type 0x02x: %d\n", type, ret);
++			dev_err(int3472->dev, "Failed to register type 0x%02x: %d\n", type, ret);
+ 		    }
+ 		    break;
+ 		case 0x11:
++		    ret = 0;
+ 		    break;
+ 		default: /* Never reached */
+ 			ret = -EINVAL;
