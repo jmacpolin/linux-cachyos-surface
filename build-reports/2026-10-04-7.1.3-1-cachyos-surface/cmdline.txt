@@ -1,0 +1,1 @@
+quiet nowatchdog splash rw rootflags=subvol=/@ rd.luks.uuid=eddfe241-bea8-4fa0-8c99-0dd2a4ef4905 root=/dev/mapper/luks-eddfe241-bea8-4fa0-8c99-0dd2a4ef4905 pci=hpiosize=0 i915.enable_psr=0 rcutree.enable_rcu_lazy=1

@@ -1,0 +1,57 @@
+Started Intel Precise Touch & Stylus Daemon.
+[10:36:39.698] [info] Loading config /etc/iptsd.conf.
+[10:36:39.698] [info] Loading config /etc/iptsd.d/91-calibration.conf.
+[10:36:39.712] [info] Connected to device 045E:0C52
+[10:36:39.712] [info] Running in Touchscreen mode
+[13:31:34.396] [warning] core: linux: Reading from file failed: Input/output error
+Stopping Intel Precise Touch & Stylus Daemon...
+Started Intel Precise Touch & Stylus Daemon.
+[13:31:34.459] [info] Loading config /etc/iptsd.conf.
+[13:31:34.459] [info] Loading config /etc/iptsd.d/91-calibration.conf.
+[13:31:34.460] [info] Connected to device 045E:0C52
+[13:31:34.460] [info] Running in Touchscreen mode
+[13:31:34.497] [error] core: linux: IOCTL 3221374982 failed: No such device
+iptsd@dev-hidraw2.service: Deactivated successfully.
+Stopped Intel Precise Touch & Stylus Daemon.
+iptsd@dev-hidraw2.service: Consumed 8.318s CPU time over 2h 40min 36.693s wall clock time, 2.2M memory peak.
+[13:36:16.398] [warning] core: linux: Reading from file failed: Input/output error
+Stopping Intel Precise Touch & Stylus Daemon...
+Started Intel Precise Touch & Stylus Daemon.
+[13:36:16.454] [info] Loading config /etc/iptsd.conf.
+[13:36:16.454] [info] Loading config /etc/iptsd.d/91-calibration.conf.
+[13:36:16.455] [info] Connected to device 045E:0C52
+[13:36:16.455] [info] Running in Touchscreen mode
+[13:36:16.498] [error] core: linux: IOCTL 3221374982 failed: No such device
+iptsd@dev-hidraw7.service: Deactivated successfully.
+Stopped Intel Precise Touch & Stylus Daemon.
+[15:38:51.401] [warning] core: linux: Reading from file failed: Input/output error
+Stopping Intel Precise Touch & Stylus Daemon...
+Started Intel Precise Touch & Stylus Daemon.
+[15:38:51.470] [info] Loading config /etc/iptsd.conf.
+[15:38:51.470] [info] Loading config /etc/iptsd.d/91-calibration.conf.
+[15:38:51.471] [info] Connected to device 045E:0C52
+[15:38:51.471] [info] Running in Touchscreen mode
+[15:38:51.501] [error] core: linux: IOCTL 3221374982 failed: No such device
+iptsd@dev-hidraw2.service: Deactivated successfully.
+Stopped Intel Precise Touch & Stylus Daemon.
+[01:06:11.402] [warning] core: linux: Reading from file failed: Input/output error
+Stopping Intel Precise Touch & Stylus Daemon...
+[01:06:11.508] [error] core: linux: IOCTL 3221374982 failed: No such device
+Started Intel Precise Touch & Stylus Daemon.
+iptsd@dev-hidraw7.service: Deactivated successfully.
+Stopped Intel Precise Touch & Stylus Daemon.
+iptsd@dev-hidraw7.service: Consumed 1.733s CPU time over 4h 46min 15.499s wall clock time, 2.3M memory peak, 44K memory swap peak.
+[01:06:11.545] [info] Loading config /etc/iptsd.conf.
+[01:06:11.545] [info] Loading config /etc/iptsd.d/91-calibration.conf.
+[01:06:11.546] [info] Connected to device 045E:0C52
+[01:06:11.546] [info] Running in Touchscreen mode
+[08:06:19.409] [warning] core: linux: Reading from file failed: Input/output error
+Stopping Intel Precise Touch & Stylus Daemon...
+Started Intel Precise Touch & Stylus Daemon.
+[08:06:19.509] [error] core: linux: IOCTL 3221374982 failed: No such device
+[08:06:19.527] [info] Loading config /etc/iptsd.conf.
+[08:06:19.528] [info] Loading config /etc/iptsd.d/91-calibration.conf.
+[08:06:19.541] [info] Connected to device 045E:0C52
+[08:06:19.541] [info] Running in Touchscreen mode
+iptsd@dev-hidraw8.service: Deactivated successfully.
+Stopped Intel Precise Touch & Stylus Daemon.

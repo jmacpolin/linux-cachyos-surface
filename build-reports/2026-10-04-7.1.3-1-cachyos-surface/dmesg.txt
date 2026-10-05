@@ -1,0 +1,882 @@
+[    4.841255] PTP clock support registered
+[    4.844865] intel_tcc_cooling: Programmable TCC Offset detected
+[    4.913278] intel_rapl_msr: PL4 support detected (updated).
+[    4.913295] intel_rapl_common: Found RAPL domain package
+[    4.913297] intel_rapl_common: Found RAPL domain core
+[    4.913298] intel_rapl_common: Found RAPL domain uncore
+[    4.913299] intel_rapl_common: Found RAPL domain psys
+[    5.043192] snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+[    5.043377] snd_hda_intel 0000:00:1f.3: bound 0000:00:02.0 (ops intel_audio_component_bind_ops [i915])
+[    5.087788] snd_hda_codec_alc269 hdaudioC0D0: autoconfig for ALC274: line_outs=1 (0x1b/0x0/0x0/0x0/0x0) type:speaker
+[    5.087792] snd_hda_codec_alc269 hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    5.087794] snd_hda_codec_alc269 hdaudioC0D0:    hp_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    5.087795] snd_hda_codec_alc269 hdaudioC0D0:    mono: mono_out=0x0
+[    5.087796] snd_hda_codec_alc269 hdaudioC0D0:    inputs:
+[    5.087797] snd_hda_codec_alc269 hdaudioC0D0:      Mic=0x12
+[    5.105600] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[    5.105611] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[    5.105620] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[    5.105627] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[    5.105680] iwlwifi 0000:00:14.3: Detected RF GF, rfid=0x2010d000
+[    5.107147] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[    5.120904] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input14
+[    5.120945] input: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input15
+[    5.120978] input: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input16
+[    5.121007] input: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input17
+[    5.191959] iwlwifi 0000:00:14.3: base HW address: xx:xx:xx:xx:xx:xx
+[    5.819508] input: IPTSD Virtual Touchscreen 045E:0C52 as /devices/virtual/input/input18
+[    5.819882] input: IPTSD Virtual Stylus 045E:0C52 as /devices/virtual/input/input19
+[    5.854145] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    5.854150] Bluetooth: BNEP filters: protocol multicast
+[    5.854154] Bluetooth: BNEP socket layer initialized
+[    6.091370] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[    6.091428] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[    6.091487] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[    6.091546] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[    6.092857] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[    6.328787] Bluetooth: hci0: Waiting for firmware download to complete
+[    6.329105] Bluetooth: hci0: Firmware loaded in 1491154 usecs
+[    6.329299] Bluetooth: hci0: Waiting for device to boot
+[    6.345184] Bluetooth: hci0: Device booted in 15642 usecs
+[    6.347863] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-0040-0041.ddc
+[    6.350411] Bluetooth: hci0: Applying Intel DDC parameters completed
+[    6.353465] Bluetooth: hci0: Firmware timestamp 2026.5 buildtype 1 build 82122
+[    6.353486] Bluetooth: hci0: Firmware SHA1: 0x2925677d
+[    6.357410] Bluetooth: hci0: Fseq status: Success (0x00)
+[    6.357429] Bluetooth: hci0: Fseq executed: 00.00.02.41
+[    6.357437] Bluetooth: hci0: Fseq BT Top: 00.00.02.41
+[    6.384021] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[    6.384093] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[    6.384154] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[    6.384215] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[    6.385318] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[    6.427372] Bluetooth: MGMT ver 1.23
+[    6.442179] NET: Registered PF_ALG protocol family
+[   12.213108] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[   12.213992] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[   12.295008] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[   12.295013] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[   12.298067] wlan0: authenticated
+[   12.298966] wlan0: associate with xx:xx:xx:xx:xx:xx (try 1/3)
+[   12.339433] wlan0: RX AssocResp from xx:xx:xx:xx:xx:xx (capab=0x1511 status=0 aid=1)
+[   12.350383] wlan0: associated
+[   12.691697] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=13097 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[   12.816399] rfkill: input handler disabled
+[   12.941693] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=13176 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[   13.095930] Bluetooth: RFCOMM TTY layer initialized
+[   13.095937] Bluetooth: RFCOMM socket layer initialized
+[   13.095941] Bluetooth: RFCOMM ver 1.11
+[   13.151020] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=13180 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[   14.033990] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[   14.192023] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[   14.441981] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[   21.616814] rfkill: input handler enabled
+[   23.290526] rfkill: input handler disabled
+[   43.848128] rfkill: input handler enabled
+[   46.370228] rfkill: input handler disabled
+[   53.591834] rfkill: input handler enabled
+[   55.154379] rfkill: input handler disabled
+[ 1318.831939] warning: `Socket Thread' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+[ 3206.296380] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=56082 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[ 3206.397134] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=56184 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[ 3974.041715] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=53439 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[ 3974.540925] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=53565 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[ 8035.182490] input: Microsoft Surface 045E:09AE Keyboard as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0004/input/input20
+[ 8035.188563] hid-generic 0019:045E:0991.0005: hidraw3: HOST HID v1.11 Device [Microsoft Surface 045E:0991] on 01:15:02:05:00
+[ 8035.192604] input: Microsoft Surface 045E:09B0 Keyboard as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0006/input/input23
+[ 8035.198262] input: Microsoft Surface 045E:09AF Mouse as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input26
+[ 8035.214452] input: Microsoft Surface 045E:09AE as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0004/input/input21
+[ 8035.214665] input: Microsoft Surface 045E:09B0 as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0006/input/input24
+[ 8035.215043] input: Microsoft Surface 045E:09AF Touchpad as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input27
+[ 8035.215298] input: Microsoft Surface 045E:09AE as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0004/input/input22
+[ 8035.215374] input: Microsoft Surface 045E:09B0 as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0006/input/input25
+[ 8035.215606] input: Microsoft Surface 045E:09AF as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input28
+[ 8035.215822] hid-generic 0019:045E:09AE.0004: input,hidraw4: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09AE] on 01:15:02:01:00
+[ 8035.215932] input: Microsoft Surface 045E:09AF as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input29
+[ 8035.216388] hid-generic 0019:045E:09B0.0006: input,hidraw5: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09B0] on 01:15:02:02:00
+[ 8035.216527] hid-generic 0019:045E:09AF.0007: input,hidraw6: HOST HID v1.11 Mouse [Microsoft Surface 045E:09AF] on 01:15:02:03:00
+[ 8035.344411] input: Microsoft Surface 045E:09AE as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0004/input/input30
+[ 8035.371567] input: Microsoft Surface 045E:09AF Mouse as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input31
+[ 8035.382390] surface 0019:045E:09AE.0004: input,hidraw4: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09AE] on 01:15:02:01:00
+[ 8035.382748] input: Microsoft Surface 045E:09AF Touchpad as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input32
+[ 8035.383304] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input33
+[ 8035.383476] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0007/input/input34
+[ 8035.383781] hid-multitouch 0019:045E:09AF.0007: input,hidraw6: HOST HID v1.11 Mouse [Microsoft Surface 045E:09AF] on 01:15:02:03:00
+[ 9576.034793] input: Microsoft Surface 045E:09AE as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0008/input/input35
+[ 9576.040477] hid-generic 0019:045E:0991.0009: hidraw3: HOST HID v1.11 Device [Microsoft Surface 045E:0991] on 01:15:02:05:00
+[ 9576.045559] input: Microsoft Surface 045E:09B0 Keyboard as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.000A/input/input36
+[ 9576.059923] input: Microsoft Surface 045E:09AF Mouse as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.000B/input/input39
+[ 9576.062327] surface 0019:045E:09AE.0008: input,hidraw4: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09AE] on 01:15:02:01:00
+[ 9576.063823] input: Microsoft Surface 045E:09B0 as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.000A/input/input37
+[ 9576.064350] input: Microsoft Surface 045E:09AF Touchpad as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.000B/input/input40
+[ 9576.064488] input: Microsoft Surface 045E:09B0 as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.000A/input/input38
+[ 9576.065553] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.000B/input/input41
+[ 9576.065752] hid-generic 0019:045E:09B0.000A: input,hidraw5: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09B0] on 01:15:02:02:00
+[ 9576.066004] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.000B/input/input42
+[ 9576.066577] hid-multitouch 0019:045E:09AF.000B: input,hidraw6: HOST HID v1.11 Mouse [Microsoft Surface 045E:09AF] on 01:15:02:03:00
+[ 9640.140301] wlan0: deauthenticating from xx:xx:xx:xx:xx:xx by local choice (Reason: 3=DEAUTH_LEAVING)
+[ 9641.390095] PM: suspend entry (s2idle)
+[ 9641.403295] Filesystems sync: 0.013 seconds
+[ 9641.518845] Freezing user space processes
+[ 9641.520871] Freezing user space processes completed (elapsed 0.002 seconds)
+[ 9641.520877] OOM killer disabled.
+[ 9641.520878] Freezing remaining freezable tasks
+[ 9641.522099] Freezing remaining freezable tasks completed (elapsed 0.001 seconds)
+[ 9641.522110] printk: Suspending console(s) (use no_console_suspend to debug)
+[10465.992747] intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[10465.994756] ithc 0000:00:10.6: no ACPI config, using legacy mode
+[10465.997061] surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[10465.997361] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.49.4
+[10465.997365] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+[10466.011012] auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[10466.014696] i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+[10466.015227] i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+[10466.015233] i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+[10466.015713] i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+[10466.016032] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io,decodes=io:owns=io+mem
+[10466.227505] ithc 0000:00:10.6: config: e0000002 00000000 001fc0ff 00000010 00000014 43495424 0ce3dce8 0c52045e 00000001 b52c2b35 2e1393da 00000000 27e95c87 00040302 d81fb4dd 4aaf0a57
+[10466.236257] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+[10466.236671] OOM killer enabled.
+[10466.236676] Restarting tasks: Starting
+[10466.237429] Restarting tasks: Done
+[10466.237440] efivarfs: resyncing variable state
+[10466.237365] mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+[10466.240854] efivarfs: finished resyncing variable state
+[10466.240883] random: crng reseeded on system resumption
+[10466.241187] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input43
+[10466.241315] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input44
+[10466.241403] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input45
+[10466.241472] input: Intel Touch Host Controller Touchscreen as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input46
+[10466.241578] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input47
+[10466.241640] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input48
+[10466.241733] input: Intel Touch Host Controller Stylus as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input49
+[10466.241835] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000C/input/input50
+[10466.246800] PM: suspend exit
+[10466.300138] input: IPTSD Virtual Touchscreen 045E:0C52 as /devices/virtual/input/input51
+[10466.300233] input: IPTSD Virtual Stylus 045E:0C52 as /devices/virtual/input/input52
+[10466.387220] hid-generic 0001:045E:0C52.000C: input,hidraw7: <UNKNOWN> HID v1.00 Device [Intel Touch Host Controller] on pci-0000:00:10.6/ithc
+[10466.466364] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[10466.466424] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[10466.466490] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[10466.466599] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[10466.467860] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[10472.081359] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[10472.082265] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[10472.163542] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[10472.163548] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[10472.166141] wlan0: authenticated
+[10472.166686] wlan0: associate with xx:xx:xx:xx:xx:xx (try 1/3)
+[10472.212016] wlan0: RX AssocResp from xx:xx:xx:xx:xx:xx (capab=0x1511 status=0 aid=1)
+[10472.223648] wlan0: associated
+[10472.495226] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=43735 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10472.627762] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=43808 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10472.878339] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=44003 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10473.995036] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10474.245104] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10474.495035] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10566.025090] wlan0: deauthenticating from xx:xx:xx:xx:xx:xx by local choice (Reason: 3=DEAUTH_LEAVING)
+[10567.248241] PM: suspend entry (s2idle)
+[10567.266899] Filesystems sync: 0.018 seconds
+[10567.384064] Freezing user space processes
+[10567.386053] Freezing user space processes completed (elapsed 0.001 seconds)
+[10567.386059] OOM killer disabled.
+[10567.386061] Freezing remaining freezable tasks
+[10567.387066] Freezing remaining freezable tasks completed (elapsed 0.001 seconds)
+[10567.387071] printk: Suspending console(s) (use no_console_suspend to debug)
+[10748.954173] intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[10748.956018] ithc 0000:00:10.6: no ACPI config, using legacy mode
+[10748.958823] surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[10748.959615] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.49.4
+[10748.959620] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+[10748.972358] auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[10748.977795] i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+[10748.978280] i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+[10748.978286] i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+[10748.978741] i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+[10748.979014] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io,decodes=io:owns=io+mem
+[10749.187138] ithc 0000:00:10.6: config: e0000002 00000000 001fc0ff 00000010 00000014 43495424 0ce3dce8 0c52045e 00000001 b52c2b35 2e13939e 00000000 27e95c87 00040302 d81fbcdd 4aaf0a57
+[10749.195324] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+[10749.195928] OOM killer enabled.
+[10749.195932] Restarting tasks: Starting
+[10749.196574] Restarting tasks: Done
+[10749.196585] efivarfs: resyncing variable state
+[10749.196401] mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+[10749.200115] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input53
+[10749.200312] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input54
+[10749.200410] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input55
+[10749.200497] input: Intel Touch Host Controller Touchscreen as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input56
+[10749.200613] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input57
+[10749.200694] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input58
+[10749.200750] efivarfs: finished resyncing variable state
+[10749.200787] random: crng reseeded on system resumption
+[10749.200788] input: Intel Touch Host Controller Stylus as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input59
+[10749.200934] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000D/input/input60
+[10749.206425] PM: suspend exit
+[10749.253453] input: IPTSD Virtual Touchscreen 045E:0C52 as /devices/virtual/input/input61
+[10749.253546] input: IPTSD Virtual Stylus 045E:0C52 as /devices/virtual/input/input62
+[10749.332766] hid-generic 0001:045E:0C52.000D: input,hidraw2: <UNKNOWN> HID v1.00 Device [Intel Touch Host Controller] on pci-0000:00:10.6/ithc
+[10752.944681] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[10752.945672] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[10753.029293] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[10753.029315] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[10753.032321] wlan0: authenticated
+[10753.033812] wlan0: associate with xx:xx:xx:xx:xx:xx (try 1/3)
+[10753.077005] wlan0: RX AssocResp from xx:xx:xx:xx:xx:xx (capab=0x1511 status=0 aid=1)
+[10753.091638] wlan0: associated
+[10753.453376] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=51358 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10753.703363] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=51446 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10753.953389] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=51686 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10755.179089] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10755.365362] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10755.703231] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[10857.959732] wlan0: deauthenticating from xx:xx:xx:xx:xx:xx by local choice (Reason: 3=DEAUTH_LEAVING)
+[10859.193074] PM: suspend entry (s2idle)
+[10859.210518] Filesystems sync: 0.017 seconds
+[10859.330872] Freezing user space processes
+[10859.332936] Freezing user space processes completed (elapsed 0.002 seconds)
+[10859.332945] OOM killer disabled.
+[10859.332946] Freezing remaining freezable tasks
+[10859.334134] Freezing remaining freezable tasks completed (elapsed 0.001 seconds)
+[10859.334141] printk: Suspending console(s) (use no_console_suspend to debug)
+[18103.120164] intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[18103.122400] ithc 0000:00:10.6: no ACPI config, using legacy mode
+[18103.126074] surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[18103.127331] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.49.4
+[18103.127335] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+[18103.138513] auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[18103.144417] i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+[18103.145457] i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+[18103.145467] i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+[18103.146041] i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+[18103.146387] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io,decodes=io:owns=io+mem
+[18103.353704] ithc 0000:00:10.6: config: e0000002 00000000 001fc0ff 00000010 00000014 43495424 0ce3dce8 0c52045e 00000001 b52c2b35 2e1393ba 00000000 27e95c87 00040302 d81fbcdd 4aaf0ad7
+[18103.361855] OOM killer enabled.
+[18103.361858] Restarting tasks: Starting
+[18103.361884] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+[18103.362735] Restarting tasks: Done
+[18103.362746] efivarfs: resyncing variable state
+[18103.362937] mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+[18103.366516] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input63
+[18103.366660] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input64
+[18103.366757] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input65
+[18103.366834] input: Intel Touch Host Controller Touchscreen as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input66
+[18103.366964] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input67
+[18103.367094] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input68
+[18103.367097] efivarfs: finished resyncing variable state
+[18103.367123] random: crng reseeded on system resumption
+[18103.367186] input: Intel Touch Host Controller Stylus as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input69
+[18103.367305] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.000E/input/input70
+[18103.373491] PM: suspend exit
+[18103.432769] input: IPTSD Virtual Touchscreen 045E:0C52 as /devices/virtual/input/input71
+[18103.433083] input: IPTSD Virtual Stylus 045E:0C52 as /devices/virtual/input/input72
+[18103.602121] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[18103.602170] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[18103.602181] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[18103.602191] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[18103.603739] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[18103.607319] hid-generic 0001:045E:0C52.000E: input,hidraw7: <UNKNOWN> HID v1.00 Device [Intel Touch Host Controller] on pci-0000:00:10.6/ithc
+[18109.756025] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[18109.756961] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[18109.840111] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[18109.840132] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[18109.843501] wlan0: authenticated
+[18109.846159] wlan0: associate with xx:xx:xx:xx:xx:xx (try 1/3)
+[18109.891650] wlan0: RX AssocResp from xx:xx:xx:xx:xx:xx (capab=0x1511 status=0 aid=1)
+[18109.905939] wlan0: associated
+[18110.262818] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=56164 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[18110.366951] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=56194 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[18110.616834] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=56255 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[18111.335811] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[18111.616558] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[18111.846977] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[18200.421702] input: MX Ergo S Plus Mouse as /devices/virtual/misc/uhid/0005:046D:B03E.000F/input/input73
+[18200.422087] hid-generic 0005:046D:B03E.000F: input,hidraw2: BLUETOOTH HID v0.13 Mouse [MX Ergo S Plus] on xx:xx:xx:xx:xx:xx
+[29970.042464] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=58098 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[29970.163486] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=58213 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[29970.371251] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=58350 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[30688.161274] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=51415 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[30688.468518] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=51654 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[30688.915194] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=52096 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[30706.438827] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=62193 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+[30707.318012] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=62838 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+[30708.568074] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=63859 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+[30709.823084] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=64247 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+[30710.894056] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=64271 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+[30712.111627] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=50 TOS=0x00 PREC=0x00 TTL=255 ID=65072 PROTO=UDP SPT=5355 DPT=5355 LEN=30 
+[35276.552662] wlan0: deauthenticating from xx:xx:xx:xx:xx:xx by local choice (Reason: 3=DEAUTH_LEAVING)
+[35277.924018] PM: suspend entry (s2idle)
+[35277.945547] Filesystems sync: 0.021 seconds
+[35277.968741] Freezing user space processes
+[35277.970765] Freezing user space processes completed (elapsed 0.002 seconds)
+[35277.970773] OOM killer disabled.
+[35277.970775] Freezing remaining freezable tasks
+[35277.972360] Freezing remaining freezable tasks completed (elapsed 0.001 seconds)
+[35277.972367] printk: Suspending console(s) (use no_console_suspend to debug)
+[52141.851867] intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[52141.854807] ithc 0000:00:10.6: no ACPI config, using legacy mode
+[52141.861493] surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[52141.862516] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.49.4
+[52141.862526] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+[52141.869876] auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[52141.881055] i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+[52141.881549] i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+[52141.881555] i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+[52141.882019] i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+[52141.882340] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io,decodes=io:owns=io+mem
+[52142.086146] ithc 0000:00:10.6: config: e0000002 00000000 001fc0ff 00000010 00000014 43495424 0ce3dce8 0c52045e 00000001 b52c2b35 2e13939a 00000000 07e95c8f 00040302 d81fbcd9 4aaf0a57
+[52142.096293] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+[52142.097519] OOM killer enabled.
+[52142.097522] Restarting tasks: Starting
+[52142.097490] mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+[52142.098505] Restarting tasks: Done
+[52142.098517] efivarfs: resyncing variable state
+[52142.101529] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input75
+[52142.101670] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input76
+[52142.101753] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input77
+[52142.101852] input: Intel Touch Host Controller Touchscreen as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input78
+[52142.101980] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input79
+[52142.102077] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input80
+[52142.102167] input: Intel Touch Host Controller Stylus as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input81
+[52142.102279] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0010/input/input82
+[52142.102570] efivarfs: finished resyncing variable state
+[52142.102612] random: crng reseeded on system resumption
+[52142.133103] PM: suspend exit
+[52142.242086] input: IPTSD Virtual Touchscreen 045E:0C52 as /devices/virtual/input/input83
+[52142.242354] input: IPTSD Virtual Stylus 045E:0C52 as /devices/virtual/input/input84
+[52142.399466] hid-generic 0001:045E:0C52.0010: input,hidraw8: <UNKNOWN> HID v1.00 Device [Intel Touch Host Controller] on pci-0000:00:10.6/ithc
+[52142.407629] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[52142.407686] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[52142.407697] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[52142.407707] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[52142.409232] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[52143.334621] surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[52145.317879] surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[52152.388618] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[52152.389539] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[52152.470279] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[52152.470291] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[52152.473117] wlan0: authenticated
+[52152.474022] wlan0: associate with xx:xx:xx:xx:xx:xx (try 1/3)
+[52152.518986] wlan0: RX AssocResp from xx:xx:xx:xx:xx:xx (capab=0x1511 status=0 aid=1)
+[52152.530705] wlan0: associated
+[52152.875201] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=17534 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[52153.069540] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=17576 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[52153.320590] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=17643 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[52154.375006] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[52154.587011] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[52154.807819] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[52688.274473] surface_aggregator_tablet_mode_switch 01:26:01:00:01: unknown device posture for type-cover: 0
+[52689.276671] input: Microsoft Surface 045E:09AE as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:01:00/0019:045E:09AE.0011/input/input85
+[52689.285984] hid-generic 0019:045E:0991.0012: hidraw2: HOST HID v1.11 Device [Microsoft Surface 045E:0991] on 01:15:02:05:00
+[52689.290011] input: Microsoft Surface 045E:09B0 Keyboard as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0013/input/input86
+[52689.303011] input: Microsoft Surface 045E:09AF Mouse as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0014/input/input89
+[52689.305265] surface 0019:045E:09AE.0011: input,hidraw3: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09AE] on 01:15:02:01:00
+[52689.306455] input: Microsoft Surface 045E:09B0 as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0013/input/input87
+[52689.307199] input: Microsoft Surface 045E:09AF Touchpad as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0014/input/input90
+[52689.308092] input: Microsoft Surface 045E:09B0 as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:02:00/0019:045E:09B0.0013/input/input88
+[52689.308741] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0014/input/input91
+[52689.309183] hid-generic 0019:045E:09B0.0013: input,hidraw4: HOST HID v1.11 Keyboard [Microsoft Surface 045E:09B0] on 01:15:02:02:00
+[52689.309391] input: Microsoft Surface 045E:09AF UNKNOWN as /devices/platform/MSHW0343:00/00:00:01:0e:00/01:15:02:03:00/0019:045E:09AF.0014/input/input92
+[52689.309635] hid-multitouch 0019:045E:09AF.0014: input,hidraw5: HOST HID v1.11 Mouse [Microsoft Surface 045E:09AF] on 01:15:02:03:00
+[53292.963773] wlan0: deauthenticating from xx:xx:xx:xx:xx:xx by local choice (Reason: 3=DEAUTH_LEAVING)
+[53294.302570] PM: suspend entry (s2idle)
+[53294.314972] Filesystems sync: 0.012 seconds
+[53294.339650] Freezing user space processes
+[53294.342315] Freezing user space processes completed (elapsed 0.002 seconds)
+[53294.342326] OOM killer disabled.
+[53294.342328] Freezing remaining freezable tasks
+[53294.344399] Freezing remaining freezable tasks completed (elapsed 0.002 seconds)
+[53294.344410] printk: Suspending console(s) (use no_console_suspend to debug)
+[77350.079997] intel-ipu6 0000:00:05.0: IPU6 in secure mode
+[77350.087900] ithc 0000:00:10.6: no ACPI config, using legacy mode
+[77350.088613] i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.49.4
+[77350.088625] i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+[77350.091232] surface_serial_hub serial0-0: rx: parser: invalid start of frame, skipping
+[77350.098027] auxiliary intel_ipu6.psys.40: Failed to get runtime PM
+[77350.106223] i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+[77350.107537] i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+[77350.107542] i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+[77350.108066] i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+[77350.108365] i915 0000:00:02.0: vgaarb: VGA decodes changed: olddecodes=io,decodes=io:owns=io+mem
+[77350.319305] ithc 0000:00:10.6: config: e0000002 00000000 001fc0ff 00000010 00000014 43495424 0ce3dce8 0c52045e 00000001 b52c2b35 6e13939a 00000000 07e95c87 00040302 d91fbcd9 caaf4a57
+[77350.329850] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+[77350.330748] OOM killer enabled.
+[77350.330751] Restarting tasks: Starting
+[77350.330738] mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+[77350.332087] Restarting tasks: Done
+[77350.332100] efivarfs: resyncing variable state
+[77350.333960] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input93
+[77350.334179] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input94
+[77350.334384] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input95
+[77350.334594] input: Intel Touch Host Controller Touchscreen as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input96
+[77350.334786] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input97
+[77350.334870] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input98
+[77350.334984] input: Intel Touch Host Controller Stylus as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input99
+[77350.335177] input: Intel Touch Host Controller as /devices/pci0000:00/0000:00:10.6/0001:045E:0C52.0015/input/input100
+[77350.335843] efivarfs: finished resyncing variable state
+[77350.335887] random: crng reseeded on system resumption
+[77350.361293] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.361307] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.361311] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.370512] PM: suspend exit
+[77350.371298] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.381289] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.391288] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.401274] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.411267] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.421268] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.431276] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.441260] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.451133] input: IPTSD Virtual Touchscreen 045E:0C52 as /devices/virtual/input/input101
+[77350.451251] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.461246] ithc 0000:00:10.6: hid_input_report failed with -16 (size 6, report ID 0x40)
+[77350.464335] input: IPTSD Virtual Stylus 045E:0C52 as /devices/virtual/input/input102
+[77350.471545] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.481532] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.491558] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.501635] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.511592] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.521553] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.531542] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.541513] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.551470] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.561522] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.571514] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.581500] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.591497] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.601532] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.611441] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.621518] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.626736] iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+[77350.626795] iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+[77350.626806] iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+[77350.626816] iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+[77350.628241] iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+[77350.631421] ithc 0000:00:10.6: hid_input_report failed with -16 (size 3500, report ID 0x12)
+[77350.636371] hid-generic 0001:045E:0C52.0015: input,hidraw6: <UNKNOWN> HID v1.00 Device [Intel Touch Host Controller] on pci-0000:00:10.6/ithc
+[77361.077632] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[77361.078585] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[77361.160127] wlan0: authenticate with xx:xx:xx:xx:xx:xx (local address=xx:xx:xx:xx:xx:xx)
+[77361.160150] wlan0: send auth to xx:xx:xx:xx:xx:xx (try 1/3)
+[77361.164441] wlan0: authenticated
+[77361.166233] wlan0: associate with xx:xx:xx:xx:xx:xx (try 1/3)
+[77361.208737] wlan0: RX AssocResp from xx:xx:xx:xx:xx:xx (capab=0x1511 status=0 aid=1)
+[77361.221411] wlan0: associated
+[77361.469827] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=4651 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[77361.602554] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=4734 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[77361.851975] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=192.168.8.125 DST=224.0.0.252 LEN=53 TOS=0x00 PREC=0x00 TTL=255 ID=4793 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[77362.601941] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[77362.755840] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[77363.006608] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=73 TC=0 HOPLIMIT=255 FLOWLBL=190266 PROTO=UDP SPT=5355 DPT=5355 LEN=33 
+[77379.752855] surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[77381.751742] surface_serial_hub serial0-0: event: unhandled event (rqid: 0x02, tc: 0x02, tid: 0x01, cid: 0x1a, iid: 0x01)
+[77442.924248] input: MX Ergo S Plus Mouse as /devices/virtual/misc/uhid/0005:046D:B03E.0016/input/input103
+[77442.924556] hid-generic 0005:046D:B03E.0016: input,hidraw7: BLUETOOTH HID v0.13 Mouse [MX Ergo S Plus] on xx:xx:xx:xx:xx:xx
+[79587.844868] x86/split lock detection: #AC: steam/68939 took a split_lock trap at address: 0xf4f6d05f
+[79684.829858] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=239 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=199 
+[79684.830376] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=90 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=50 
+[79687.817007] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=90 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=50 
+[79689.804774] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=243 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=203 
+[79692.839131] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=90 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=50 
+[79709.841467] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=243 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=203 
+[80683.003972] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=17835 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[80683.115283] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=17871 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[80683.504404] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=224.0.0.252 LEN=58 TOS=0x00 PREC=0x00 TTL=255 ID=18122 PROTO=UDP SPT=5355 DPT=5355 LEN=38 
+[80684.428657] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=243 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=203 
+[80684.428736] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=90 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=50 
+[80684.529048] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=228 TOS=0x00 PREC=0x00 TTL=64 ID=53499 DF PROTO=UDP SPT=27036 DPT=27036 LEN=208 
+[80684.530778] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=40264 DF PROTO=TCP SPT=51259 DPT=27036 WINDOW=65535 RES=0x00 SYN URGP=0 
+[80685.536173] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=40265 DF PROTO=TCP SPT=51259 DPT=27036 WINDOW=65535 RES=0x00 SYN URGP=0 
+[80686.561552] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=40266 DF PROTO=TCP SPT=51259 DPT=27036 WINDOW=65535 RES=0x00 SYN URGP=0 
+[80687.440235] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=90 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=50 
+[80687.586025] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=40267 DF PROTO=TCP SPT=51259 DPT=27036 WINDOW=65535 RES=0x00 SYN URGP=0 
+[80688.429778] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=243 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=203 
+[80688.611714] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=40268 DF PROTO=TCP SPT=51259 DPT=27036 WINDOW=65535 RES=0x00 SYN URGP=0 
+[80689.567502] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=228 TOS=0x00 PREC=0x00 TTL=64 ID=58072 DF PROTO=UDP SPT=27036 DPT=27036 LEN=208 
+[80693.467701] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=90 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=50 
+[80706.450639] [UFW BLOCK] IN=wlan0 OUT= MAC= SRC=fe80:0000:0000:0000:7fa3:6605:4c75:3b6f DST=ff02:0000:0000:0000:0000:0000:0000:0001 LEN=243 TC=0 HOPLIMIT=1 FLOWLBL=213146 PROTO=UDP SPT=27036 DPT=27036 LEN=203 
+[80706.553622] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.170 DST=192.168.8.125 LEN=60 TOS=0x00 PREC=0x00 TTL=64 ID=59057 DF PROTO=TCP SPT=49095 DPT=27036 WINDOW=65535 RES=0x00 SYN URGP=0 
+[100339.294272] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=19739 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100345.295507] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=19739 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100345.406954] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=19739 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100345.406955] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=419 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100345.517844] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=464 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100345.609582] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=19739 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100345.722406] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=658 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[100426.808853] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25559 DF PROTO=UDP SPT=35022 DPT=37113 LEN=354 
+[100426.809119] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25560 DF PROTO=UDP SPT=35022 DPT=37113 LEN=354 
+[100427.003787] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25575 DF PROTO=UDP SPT=35022 DPT=37113 LEN=354 
+[100427.003798] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25576 DF PROTO=UDP SPT=35022 DPT=37113 LEN=354 
+[100427.807637] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25640 DF PROTO=UDP SPT=37122 DPT=37113 LEN=354 
+[100427.808282] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25641 DF PROTO=UDP SPT=37122 DPT=37113 LEN=354 
+[100428.057098] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25656 DF PROTO=UDP SPT=37122 DPT=37113 LEN=354 
+[100428.057109] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25657 DF PROTO=UDP SPT=37122 DPT=37113 LEN=354 
+[100428.811039] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25710 DF PROTO=UDP SPT=52309 DPT=37113 LEN=354 
+[100428.811047] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=25711 DF PROTO=UDP SPT=52309 DPT=37113 LEN=354 
+[100546.850077] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51252 DF PROTO=UDP SPT=51477 DPT=42968 LEN=354 
+[100546.850443] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51253 DF PROTO=UDP SPT=51477 DPT=42968 LEN=354 
+[100547.049495] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51265 DF PROTO=UDP SPT=51477 DPT=42968 LEN=354 
+[100547.049505] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51266 DF PROTO=UDP SPT=51477 DPT=42968 LEN=354 
+[100547.849015] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51386 DF PROTO=UDP SPT=58500 DPT=42968 LEN=354 
+[100547.849312] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51387 DF PROTO=UDP SPT=58500 DPT=42968 LEN=354 
+[100666.856302] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=8558 DF PROTO=UDP SPT=36703 DPT=45924 LEN=354 
+[100666.856936] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=8559 DF PROTO=UDP SPT=36703 DPT=45924 LEN=354 
+[100667.057399] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=8563 DF PROTO=UDP SPT=36703 DPT=45924 LEN=354 
+[100667.057409] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=8564 DF PROTO=UDP SPT=36703 DPT=45924 LEN=354 
+[100667.855729] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=8583 DF PROTO=UDP SPT=44785 DPT=45924 LEN=354 
+[100667.856356] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=8584 DF PROTO=UDP SPT=44785 DPT=45924 LEN=354 
+[100786.905006] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=10913 DF PROTO=UDP SPT=43259 DPT=49807 LEN=354 
+[100786.905661] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=10914 DF PROTO=UDP SPT=43259 DPT=49807 LEN=354 
+[100787.105389] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=10954 DF PROTO=UDP SPT=43259 DPT=49807 LEN=354 
+[100787.105400] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=10955 DF PROTO=UDP SPT=43259 DPT=49807 LEN=354 
+[100787.892259] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=10977 DF PROTO=UDP SPT=55724 DPT=49807 LEN=354 
+[100787.892269] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=10978 DF PROTO=UDP SPT=55724 DPT=49807 LEN=354 
+[100906.940017] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=11316 DF PROTO=UDP SPT=54034 DPT=34678 LEN=354 
+[100906.940027] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=11317 DF PROTO=UDP SPT=54034 DPT=34678 LEN=354 
+[100907.138195] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=11324 DF PROTO=UDP SPT=54034 DPT=34678 LEN=354 
+[100907.138205] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=11325 DF PROTO=UDP SPT=54034 DPT=34678 LEN=354 
+[100907.944498] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=11366 DF PROTO=UDP SPT=58024 DPT=34678 LEN=354 
+[100907.944508] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=11367 DF PROTO=UDP SPT=58024 DPT=34678 LEN=354 
+[101026.944595] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30895 DF PROTO=UDP SPT=34827 DPT=36636 LEN=354 
+[101026.945359] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30896 DF PROTO=UDP SPT=34827 DPT=36636 LEN=354 
+[101027.144952] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30901 DF PROTO=UDP SPT=34827 DPT=36636 LEN=354 
+[101027.144964] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30902 DF PROTO=UDP SPT=34827 DPT=36636 LEN=354 
+[101027.951964] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31033 DF PROTO=UDP SPT=34277 DPT=36636 LEN=354 
+[101027.951973] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31034 DF PROTO=UDP SPT=34277 DPT=36636 LEN=354 
+[101146.511001] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=19739 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[101146.759623] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=19739 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[101146.759623] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=25918 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[101146.944649] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=46049 DF PROTO=UDP SPT=58915 DPT=59308 LEN=354 
+[101146.945313] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=46050 DF PROTO=UDP SPT=58915 DPT=59308 LEN=354 
+[101147.010255] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=25966 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[101147.144812] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=46061 DF PROTO=UDP SPT=58915 DPT=59308 LEN=354 
+[101147.144822] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=46062 DF PROTO=UDP SPT=58915 DPT=59308 LEN=354 
+[101266.953138] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52075 DF PROTO=UDP SPT=51047 DPT=41278 LEN=354 
+[101266.953821] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52076 DF PROTO=UDP SPT=51047 DPT=41278 LEN=354 
+[101267.153965] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52097 DF PROTO=UDP SPT=51047 DPT=41278 LEN=354 
+[101267.153978] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52098 DF PROTO=UDP SPT=51047 DPT=41278 LEN=354 
+[101267.944762] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52204 DF PROTO=UDP SPT=42305 DPT=41278 LEN=354 
+[101267.945427] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52205 DF PROTO=UDP SPT=42305 DPT=41278 LEN=354 
+[101386.968492] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4995 DF PROTO=UDP SPT=38235 DPT=46013 LEN=354 
+[101386.969441] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4996 DF PROTO=UDP SPT=38235 DPT=46013 LEN=354 
+[101387.169577] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5014 DF PROTO=UDP SPT=38235 DPT=46013 LEN=354 
+[101387.169669] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5015 DF PROTO=UDP SPT=38235 DPT=46013 LEN=354 
+[101387.967022] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5194 DF PROTO=UDP SPT=47100 DPT=46013 LEN=354 
+[101387.967736] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5195 DF PROTO=UDP SPT=47100 DPT=46013 LEN=354 
+[101507.084229] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31128 DF PROTO=UDP SPT=42349 DPT=40332 LEN=354 
+[101507.357307] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31155 DF PROTO=UDP SPT=42349 DPT=40332 LEN=354 
+[101507.357316] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31156 DF PROTO=UDP SPT=42349 DPT=40332 LEN=354 
+[101508.053639] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31306 DF PROTO=UDP SPT=38142 DPT=40332 LEN=354 
+[101508.156634] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31307 DF PROTO=UDP SPT=38142 DPT=40332 LEN=354 
+[101508.286320] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31328 DF PROTO=UDP SPT=38142 DPT=40332 LEN=354 
+[101627.136837] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52147 DF PROTO=UDP SPT=54000 DPT=37422 LEN=354 
+[101627.170689] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52148 DF PROTO=UDP SPT=54000 DPT=37422 LEN=354 
+[101627.335735] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52196 DF PROTO=UDP SPT=54000 DPT=37422 LEN=354 
+[101627.438140] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52197 DF PROTO=UDP SPT=54000 DPT=37422 LEN=354 
+[101628.141128] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52266 DF PROTO=UDP SPT=45616 DPT=37422 LEN=354 
+[101628.190652] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52267 DF PROTO=UDP SPT=45616 DPT=37422 LEN=354 
+[101747.133475] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5391 DF PROTO=UDP SPT=48557 DPT=36857 LEN=354 
+[101747.134159] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5392 DF PROTO=UDP SPT=48557 DPT=36857 LEN=354 
+[101747.334239] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5430 DF PROTO=UDP SPT=48557 DPT=36857 LEN=354 
+[101747.334249] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5431 DF PROTO=UDP SPT=48557 DPT=36857 LEN=354 
+[101748.135924] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5546 DF PROTO=UDP SPT=33911 DPT=36857 LEN=354 
+[101748.136562] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5547 DF PROTO=UDP SPT=33911 DPT=36857 LEN=354 
+[101867.140745] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7582 DF PROTO=UDP SPT=59050 DPT=54461 LEN=354 
+[101867.141824] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7583 DF PROTO=UDP SPT=59050 DPT=54461 LEN=354 
+[101867.341235] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7620 DF PROTO=UDP SPT=59050 DPT=54461 LEN=354 
+[101867.341299] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7621 DF PROTO=UDP SPT=59050 DPT=54461 LEN=354 
+[101868.147130] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7756 DF PROTO=UDP SPT=49906 DPT=54461 LEN=354 
+[101868.147182] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7757 DF PROTO=UDP SPT=49906 DPT=54461 LEN=354 
+[101987.192902] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=17072 DF PROTO=UDP SPT=48390 DPT=35022 LEN=354 
+[101987.192910] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=17073 DF PROTO=UDP SPT=48390 DPT=35022 LEN=354 
+[101987.392454] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=17086 DF PROTO=UDP SPT=48390 DPT=35022 LEN=354 
+[101987.392462] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=17087 DF PROTO=UDP SPT=48390 DPT=35022 LEN=354 
+[101988.189817] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=17109 DF PROTO=UDP SPT=49902 DPT=35022 LEN=354 
+[101988.190486] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=17110 DF PROTO=UDP SPT=49902 DPT=35022 LEN=354 
+[102013.006381] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=92996 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102013.065534] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=62484 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102013.232148] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=92996 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102013.474013] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=92996 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102107.211264] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31966 DF PROTO=UDP SPT=51618 DPT=53636 LEN=354 
+[102107.211914] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=31967 DF PROTO=UDP SPT=51618 DPT=53636 LEN=354 
+[102107.413730] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32000 DF PROTO=UDP SPT=51618 DPT=53636 LEN=354 
+[102107.413741] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32001 DF PROTO=UDP SPT=51618 DPT=53636 LEN=354 
+[102108.211465] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32006 DF PROTO=UDP SPT=60650 DPT=53636 LEN=354 
+[102227.222014] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32431 DF PROTO=UDP SPT=50698 DPT=35707 LEN=354 
+[102227.222693] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32432 DF PROTO=UDP SPT=50698 DPT=35707 LEN=354 
+[102227.421658] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32446 DF PROTO=UDP SPT=50698 DPT=35707 LEN=354 
+[102227.421667] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32447 DF PROTO=UDP SPT=50698 DPT=35707 LEN=354 
+[102228.222639] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32578 DF PROTO=UDP SPT=47239 DPT=35707 LEN=354 
+[102228.223498] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32579 DF PROTO=UDP SPT=47239 DPT=35707 LEN=354 
+[102347.221661] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60608 DF PROTO=UDP SPT=42155 DPT=53727 LEN=354 
+[102347.222313] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60609 DF PROTO=UDP SPT=42155 DPT=53727 LEN=354 
+[102347.422024] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60633 DF PROTO=UDP SPT=42155 DPT=53727 LEN=354 
+[102347.422034] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60634 DF PROTO=UDP SPT=42155 DPT=53727 LEN=354 
+[102348.223451] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60671 DF PROTO=UDP SPT=49270 DPT=53727 LEN=354 
+[102348.224128] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60672 DF PROTO=UDP SPT=49270 DPT=53727 LEN=354 
+[102421.253186] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=464660 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102421.420688] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=464660 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102421.670367] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=464660 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102422.298133] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=7284 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102422.502882] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=7353 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102422.751681] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=7576 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[102467.227369] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22937 DF PROTO=UDP SPT=45367 DPT=44197 LEN=354 
+[102467.228016] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22938 DF PROTO=UDP SPT=45367 DPT=44197 LEN=354 
+[102467.429403] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22974 DF PROTO=UDP SPT=45367 DPT=44197 LEN=354 
+[102587.259984] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50400 DF PROTO=UDP SPT=36083 DPT=56820 LEN=354 
+[102587.260645] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50401 DF PROTO=UDP SPT=36083 DPT=56820 LEN=354 
+[102587.461192] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50442 DF PROTO=UDP SPT=36083 DPT=56820 LEN=354 
+[102587.461199] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50443 DF PROTO=UDP SPT=36083 DPT=56820 LEN=354 
+[102588.261603] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50531 DF PROTO=UDP SPT=54856 DPT=56820 LEN=354 
+[102588.262236] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50532 DF PROTO=UDP SPT=54856 DPT=56820 LEN=354 
+[102707.284329] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=190 DF PROTO=UDP SPT=55880 DPT=49102 LEN=354 
+[102707.285030] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=191 DF PROTO=UDP SPT=55880 DPT=49102 LEN=354 
+[102707.484572] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=194 DF PROTO=UDP SPT=55880 DPT=49102 LEN=354 
+[102707.484582] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=195 DF PROTO=UDP SPT=55880 DPT=49102 LEN=354 
+[102708.284503] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=251 DF PROTO=UDP SPT=39490 DPT=49102 LEN=354 
+[102708.285170] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=252 DF PROTO=UDP SPT=39490 DPT=49102 LEN=354 
+[102827.301534] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4597 DF PROTO=UDP SPT=33382 DPT=59175 LEN=354 
+[102827.303400] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4598 DF PROTO=UDP SPT=33382 DPT=59175 LEN=354 
+[102827.501910] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4624 DF PROTO=UDP SPT=33382 DPT=59175 LEN=354 
+[102827.501920] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4625 DF PROTO=UDP SPT=33382 DPT=59175 LEN=354 
+[102828.305036] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4806 DF PROTO=UDP SPT=52056 DPT=59175 LEN=354 
+[102828.305326] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=4807 DF PROTO=UDP SPT=52056 DPT=59175 LEN=354 
+[102947.372169] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=18029 DF PROTO=UDP SPT=38059 DPT=51274 LEN=354 
+[102947.372834] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=18030 DF PROTO=UDP SPT=38059 DPT=51274 LEN=354 
+[102947.584231] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=18077 DF PROTO=UDP SPT=38059 DPT=51274 LEN=354 
+[102947.584243] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=18078 DF PROTO=UDP SPT=38059 DPT=51274 LEN=354 
+[102948.385309] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=18187 DF PROTO=UDP SPT=33243 DPT=51274 LEN=354 
+[102948.385640] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=18188 DF PROTO=UDP SPT=33243 DPT=51274 LEN=354 
+[103067.314616] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=27726 DF PROTO=UDP SPT=58423 DPT=33342 LEN=354 
+[103067.314626] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=27727 DF PROTO=UDP SPT=58423 DPT=33342 LEN=354 
+[103067.514340] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=27745 DF PROTO=UDP SPT=58423 DPT=33342 LEN=354 
+[103067.514351] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=27746 DF PROTO=UDP SPT=58423 DPT=33342 LEN=354 
+[103068.313264] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=27817 DF PROTO=UDP SPT=51536 DPT=33342 LEN=354 
+[103068.313979] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=27818 DF PROTO=UDP SPT=51536 DPT=33342 LEN=354 
+[103187.372389] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=45508 DF PROTO=UDP SPT=37857 DPT=60038 LEN=354 
+[103187.373012] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=45509 DF PROTO=UDP SPT=37857 DPT=60038 LEN=354 
+[103187.573353] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=45535 DF PROTO=UDP SPT=37857 DPT=60038 LEN=354 
+[103187.573366] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=45536 DF PROTO=UDP SPT=37857 DPT=60038 LEN=354 
+[103188.379371] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=45555 DF PROTO=UDP SPT=59006 DPT=60038 LEN=354 
+[103188.380063] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=45556 DF PROTO=UDP SPT=59006 DPT=60038 LEN=354 
+[103307.523639] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=1469 DF PROTO=UDP SPT=55629 DPT=34529 LEN=354 
+[103307.604339] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=1470 DF PROTO=UDP SPT=55629 DPT=34529 LEN=354 
+[103307.718865] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=1518 DF PROTO=UDP SPT=55629 DPT=34529 LEN=354 
+[103307.760808] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=1519 DF PROTO=UDP SPT=55629 DPT=34529 LEN=354 
+[103308.611029] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=1575 DF PROTO=UDP SPT=58565 DPT=34529 LEN=354 
+[103308.757528] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=1580 DF PROTO=UDP SPT=58565 DPT=34529 LEN=354 
+[103427.464179] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5883 DF PROTO=UDP SPT=42929 DPT=53716 LEN=354 
+[103427.464844] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5884 DF PROTO=UDP SPT=42929 DPT=53716 LEN=354 
+[103427.667831] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5900 DF PROTO=UDP SPT=42929 DPT=53716 LEN=354 
+[103427.667841] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5901 DF PROTO=UDP SPT=42929 DPT=53716 LEN=354 
+[103428.469037] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6100 DF PROTO=UDP SPT=57735 DPT=53716 LEN=354 
+[103428.469666] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6101 DF PROTO=UDP SPT=57735 DPT=53716 LEN=354 
+[103547.515745] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22758 DF PROTO=UDP SPT=54091 DPT=46704 LEN=354 
+[103547.515755] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22759 DF PROTO=UDP SPT=54091 DPT=46704 LEN=354 
+[103547.718105] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22782 DF PROTO=UDP SPT=54091 DPT=46704 LEN=354 
+[103547.718116] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22783 DF PROTO=UDP SPT=54091 DPT=46704 LEN=354 
+[103548.532043] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22850 DF PROTO=UDP SPT=44907 DPT=46704 LEN=354 
+[103548.532053] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=22851 DF PROTO=UDP SPT=44907 DPT=46704 LEN=354 
+[103667.521222] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51737 DF PROTO=UDP SPT=37301 DPT=46884 LEN=354 
+[103667.521870] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51738 DF PROTO=UDP SPT=37301 DPT=46884 LEN=354 
+[103667.723582] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51756 DF PROTO=UDP SPT=37301 DPT=46884 LEN=354 
+[103667.723590] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51757 DF PROTO=UDP SPT=37301 DPT=46884 LEN=354 
+[103668.590379] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51882 DF PROTO=UDP SPT=49132 DPT=46884 LEN=354 
+[103668.591010] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51883 DF PROTO=UDP SPT=49132 DPT=46884 LEN=354 
+[103788.550527] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55133 DF PROTO=UDP SPT=58385 DPT=36724 LEN=354 
+[103788.551213] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55134 DF PROTO=UDP SPT=58385 DPT=36724 LEN=354 
+[103788.751372] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55178 DF PROTO=UDP SPT=58385 DPT=36724 LEN=354 
+[103788.751385] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55179 DF PROTO=UDP SPT=58385 DPT=36724 LEN=354 
+[103789.541203] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55180 DF PROTO=UDP SPT=56192 DPT=36724 LEN=354 
+[103789.541887] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55181 DF PROTO=UDP SPT=56192 DPT=36724 LEN=354 
+[103907.615902] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=62592 DF PROTO=UDP SPT=35325 DPT=44742 LEN=354 
+[103907.615912] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=62593 DF PROTO=UDP SPT=35325 DPT=44742 LEN=354 
+[103907.799767] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=62643 DF PROTO=UDP SPT=35325 DPT=44742 LEN=354 
+[103907.799774] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=62644 DF PROTO=UDP SPT=35325 DPT=44742 LEN=354 
+[103908.590714] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=62668 DF PROTO=UDP SPT=40427 DPT=44742 LEN=354 
+[103908.591396] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=62669 DF PROTO=UDP SPT=40427 DPT=44742 LEN=354 
+[104007.704261] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=245333 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[104007.956186] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=245333 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[104008.189093] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:86:dd SRC=fe80:0000:0000:0000:9f5c:b27d:b01b:5bee DST=ff02:0000:0000:0000:0000:0000:0001:0003 LEN=69 TC=0 HOPLIMIT=255 FLOWLBL=245333 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[104008.526774] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=57131 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[104008.719202] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=57163 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[104008.970187] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.227 DST=224.0.0.252 LEN=49 TOS=0x00 PREC=0x00 TTL=255 ID=57209 PROTO=UDP SPT=5355 DPT=5355 LEN=29 
+[104027.594983] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=21373 DF PROTO=UDP SPT=38548 DPT=42741 LEN=354 
+[104027.596230] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=21374 DF PROTO=UDP SPT=38548 DPT=42741 LEN=354 
+[104027.795540] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=21377 DF PROTO=UDP SPT=38548 DPT=42741 LEN=354 
+[104147.600617] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29983 DF PROTO=UDP SPT=45482 DPT=49303 LEN=354 
+[104147.602290] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29984 DF PROTO=UDP SPT=45482 DPT=49303 LEN=354 
+[104147.800770] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30003 DF PROTO=UDP SPT=45482 DPT=49303 LEN=354 
+[104147.800779] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30004 DF PROTO=UDP SPT=45482 DPT=49303 LEN=354 
+[104148.602848] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30043 DF PROTO=UDP SPT=60456 DPT=49303 LEN=354 
+[104148.603544] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=30044 DF PROTO=UDP SPT=60456 DPT=49303 LEN=354 
+[104267.605228] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=39977 DF PROTO=UDP SPT=58111 DPT=48769 LEN=354 
+[104267.605849] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=39978 DF PROTO=UDP SPT=58111 DPT=48769 LEN=354 
+[104267.820612] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=39979 DF PROTO=UDP SPT=58111 DPT=48769 LEN=354 
+[104267.820623] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=39980 DF PROTO=UDP SPT=58111 DPT=48769 LEN=354 
+[104268.626589] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=40181 DF PROTO=UDP SPT=46538 DPT=48769 LEN=354 
+[104268.627244] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=40182 DF PROTO=UDP SPT=46538 DPT=48769 LEN=354 
+[104387.663873] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60150 DF PROTO=UDP SPT=42036 DPT=49157 LEN=354 
+[104387.664607] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60151 DF PROTO=UDP SPT=42036 DPT=49157 LEN=354 
+[104387.864992] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60176 DF PROTO=UDP SPT=42036 DPT=49157 LEN=354 
+[104387.864999] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60177 DF PROTO=UDP SPT=42036 DPT=49157 LEN=354 
+[104388.665180] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60318 DF PROTO=UDP SPT=47139 DPT=49157 LEN=354 
+[104388.665810] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60319 DF PROTO=UDP SPT=47139 DPT=49157 LEN=354 
+[104507.769345] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15993 DF PROTO=UDP SPT=47956 DPT=47251 LEN=354 
+[104507.861294] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15994 DF PROTO=UDP SPT=47956 DPT=47251 LEN=354 
+[104507.967094] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16008 DF PROTO=UDP SPT=47956 DPT=47251 LEN=354 
+[104508.255954] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16009 DF PROTO=UDP SPT=47956 DPT=47251 LEN=354 
+[104508.782006] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16088 DF PROTO=UDP SPT=37814 DPT=47251 LEN=354 
+[104508.857990] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16089 DF PROTO=UDP SPT=37814 DPT=47251 LEN=354 
+[104627.771718] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32206 DF PROTO=UDP SPT=33827 DPT=38125 LEN=354 
+[104627.772403] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32207 DF PROTO=UDP SPT=33827 DPT=38125 LEN=354 
+[104627.972578] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32223 DF PROTO=UDP SPT=33827 DPT=38125 LEN=354 
+[104627.972591] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32224 DF PROTO=UDP SPT=33827 DPT=38125 LEN=354 
+[104628.771735] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32380 DF PROTO=UDP SPT=36830 DPT=38125 LEN=354 
+[104628.771745] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=32381 DF PROTO=UDP SPT=36830 DPT=38125 LEN=354 
+[104747.784026] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=48079 DF PROTO=UDP SPT=59708 DPT=50072 LEN=354 
+[104747.784312] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=48080 DF PROTO=UDP SPT=59708 DPT=50072 LEN=354 
+[104747.984766] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=48111 DF PROTO=UDP SPT=59708 DPT=50072 LEN=354 
+[104747.984777] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=48112 DF PROTO=UDP SPT=59708 DPT=50072 LEN=354 
+[104748.783898] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=48276 DF PROTO=UDP SPT=37704 DPT=50072 LEN=354 
+[104748.783906] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=48277 DF PROTO=UDP SPT=37704 DPT=50072 LEN=354 
+[104867.851859] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53807 DF PROTO=UDP SPT=47416 DPT=52768 LEN=354 
+[104867.895694] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53808 DF PROTO=UDP SPT=47416 DPT=52768 LEN=354 
+[104868.120804] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53842 DF PROTO=UDP SPT=47416 DPT=52768 LEN=354 
+[104868.187621] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53843 DF PROTO=UDP SPT=47416 DPT=52768 LEN=354 
+[104868.866105] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54019 DF PROTO=UDP SPT=36384 DPT=52768 LEN=354 
+[104868.944435] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54020 DF PROTO=UDP SPT=36384 DPT=52768 LEN=354 
+[104987.851079] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=2489 DF PROTO=UDP SPT=35567 DPT=41888 LEN=354 
+[104987.851089] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=2490 DF PROTO=UDP SPT=35567 DPT=41888 LEN=354 
+[104988.082535] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=2529 DF PROTO=UDP SPT=35567 DPT=41888 LEN=354 
+[104988.082543] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=2530 DF PROTO=UDP SPT=35567 DPT=41888 LEN=354 
+[104988.846845] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=2681 DF PROTO=UDP SPT=57022 DPT=41888 LEN=354 
+[104988.847578] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=2682 DF PROTO=UDP SPT=57022 DPT=41888 LEN=354 
+[105107.944996] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=14175 DF PROTO=UDP SPT=59790 DPT=52334 LEN=354 
+[105107.989455] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=14176 DF PROTO=UDP SPT=59790 DPT=52334 LEN=354 
+[105108.141466] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=14213 DF PROTO=UDP SPT=59790 DPT=52334 LEN=354 
+[105109.031481] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=14358 DF PROTO=UDP SPT=37540 DPT=52334 LEN=354 
+[105109.032114] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=14359 DF PROTO=UDP SPT=37540 DPT=52334 LEN=354 
+[105109.136720] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=14393 DF PROTO=UDP SPT=37540 DPT=52334 LEN=354 
+[105227.943696] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16403 DF PROTO=UDP SPT=52399 DPT=40074 LEN=354 
+[105227.943706] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16404 DF PROTO=UDP SPT=52399 DPT=40074 LEN=354 
+[105228.144070] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16451 DF PROTO=UDP SPT=52399 DPT=40074 LEN=354 
+[105228.144083] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16452 DF PROTO=UDP SPT=52399 DPT=40074 LEN=354 
+[105228.945499] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16554 DF PROTO=UDP SPT=46832 DPT=40074 LEN=354 
+[105228.945509] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16555 DF PROTO=UDP SPT=46832 DPT=40074 LEN=354 
+[105348.017812] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=42417 DF PROTO=UDP SPT=59310 DPT=44408 LEN=354 
+[105348.018299] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=42418 DF PROTO=UDP SPT=59310 DPT=44408 LEN=354 
+[105348.196700] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=42462 DF PROTO=UDP SPT=59310 DPT=44408 LEN=354 
+[105348.196804] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=42463 DF PROTO=UDP SPT=59310 DPT=44408 LEN=354 
+[105348.996423] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=42515 DF PROTO=UDP SPT=57844 DPT=44408 LEN=354 
+[105348.998558] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=42516 DF PROTO=UDP SPT=57844 DPT=44408 LEN=354 
+[105468.044218] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52328 DF PROTO=UDP SPT=33998 DPT=60328 LEN=354 
+[105468.044496] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52329 DF PROTO=UDP SPT=33998 DPT=60328 LEN=354 
+[105468.241153] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52367 DF PROTO=UDP SPT=33998 DPT=60328 LEN=354 
+[105468.241163] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52368 DF PROTO=UDP SPT=33998 DPT=60328 LEN=354 
+[105469.042006] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52483 DF PROTO=UDP SPT=36982 DPT=60328 LEN=354 
+[105469.042013] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=52484 DF PROTO=UDP SPT=36982 DPT=60328 LEN=354 
+[105588.092294] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53808 DF PROTO=UDP SPT=43731 DPT=40763 LEN=354 
+[105588.092872] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53809 DF PROTO=UDP SPT=43731 DPT=40763 LEN=354 
+[105588.292921] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53859 DF PROTO=UDP SPT=43731 DPT=40763 LEN=354 
+[105588.292991] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53860 DF PROTO=UDP SPT=43731 DPT=40763 LEN=354 
+[105589.095516] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53872 DF PROTO=UDP SPT=33269 DPT=40763 LEN=354 
+[105589.095588] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=53873 DF PROTO=UDP SPT=33269 DPT=40763 LEN=354 
+[105708.151233] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15814 DF PROTO=UDP SPT=42778 DPT=33526 LEN=354 
+[105708.151906] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15815 DF PROTO=UDP SPT=42778 DPT=33526 LEN=354 
+[105708.339331] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15825 DF PROTO=UDP SPT=42778 DPT=33526 LEN=354 
+[105708.339340] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15826 DF PROTO=UDP SPT=42778 DPT=33526 LEN=354 
+[105709.120225] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15890 DF PROTO=UDP SPT=57172 DPT=33526 LEN=354 
+[105709.120959] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=15891 DF PROTO=UDP SPT=57172 DPT=33526 LEN=354 
+[105828.167921] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=23057 DF PROTO=UDP SPT=44854 DPT=49414 LEN=354 
+[105828.167930] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=23058 DF PROTO=UDP SPT=44854 DPT=49414 LEN=354 
+[105828.354038] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=23079 DF PROTO=UDP SPT=44854 DPT=49414 LEN=354 
+[105828.354047] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=23080 DF PROTO=UDP SPT=44854 DPT=49414 LEN=354 
+[105829.166886] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=23118 DF PROTO=UDP SPT=40068 DPT=49414 LEN=354 
+[105829.168570] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=23119 DF PROTO=UDP SPT=40068 DPT=49414 LEN=354 
+[105948.201052] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=49935 DF PROTO=UDP SPT=35441 DPT=48650 LEN=354 
+[105948.201677] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=49936 DF PROTO=UDP SPT=35441 DPT=48650 LEN=354 
+[105948.401921] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=49967 DF PROTO=UDP SPT=35441 DPT=48650 LEN=354 
+[105948.401933] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=49968 DF PROTO=UDP SPT=35441 DPT=48650 LEN=354 
+[105949.202040] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50121 DF PROTO=UDP SPT=47349 DPT=48650 LEN=354 
+[105949.202978] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=50122 DF PROTO=UDP SPT=47349 DPT=48650 LEN=354 
+[106068.207081] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60347 DF PROTO=UDP SPT=42753 DPT=39641 LEN=354 
+[106068.207091] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60348 DF PROTO=UDP SPT=42753 DPT=39641 LEN=354 
+[106068.410077] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60356 DF PROTO=UDP SPT=42753 DPT=39641 LEN=354 
+[106068.410088] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60357 DF PROTO=UDP SPT=42753 DPT=39641 LEN=354 
+[106069.208624] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60423 DF PROTO=UDP SPT=39417 DPT=39641 LEN=354 
+[106069.209253] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60424 DF PROTO=UDP SPT=39417 DPT=39641 LEN=354 
+[106188.265983] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=64534 DF PROTO=UDP SPT=45385 DPT=48411 LEN=354 
+[106188.265990] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=64535 DF PROTO=UDP SPT=45385 DPT=48411 LEN=354 
+[106188.465965] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=64573 DF PROTO=UDP SPT=45385 DPT=48411 LEN=354 
+[106188.465972] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=64574 DF PROTO=UDP SPT=45385 DPT=48411 LEN=354 
+[106189.266917] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=64719 DF PROTO=UDP SPT=49317 DPT=48411 LEN=354 
+[106189.266927] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=64720 DF PROTO=UDP SPT=49317 DPT=48411 LEN=354 
+[106308.268938] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7405 DF PROTO=UDP SPT=56241 DPT=43143 LEN=354 
+[106308.270242] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7406 DF PROTO=UDP SPT=56241 DPT=43143 LEN=354 
+[106308.480571] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7456 DF PROTO=UDP SPT=56241 DPT=43143 LEN=354 
+[106308.480580] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7457 DF PROTO=UDP SPT=56241 DPT=43143 LEN=354 
+[106309.272056] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7484 DF PROTO=UDP SPT=34145 DPT=43143 LEN=354 
+[106309.272735] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=7485 DF PROTO=UDP SPT=34145 DPT=43143 LEN=354 
+[106428.322973] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=33093 DF PROTO=UDP SPT=41840 DPT=47503 LEN=354 
+[106428.323802] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=33094 DF PROTO=UDP SPT=41840 DPT=47503 LEN=354 
+[106428.563776] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=33124 DF PROTO=UDP SPT=41840 DPT=47503 LEN=354 
+[106428.563784] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=33125 DF PROTO=UDP SPT=41840 DPT=47503 LEN=354 
+[106429.344973] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=33180 DF PROTO=UDP SPT=55838 DPT=47503 LEN=354 
+[106429.345611] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=33181 DF PROTO=UDP SPT=55838 DPT=47503 LEN=354 
+[106548.327329] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51538 DF PROTO=UDP SPT=45235 DPT=58049 LEN=354 
+[106548.327998] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51539 DF PROTO=UDP SPT=45235 DPT=58049 LEN=354 
+[106548.529704] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51568 DF PROTO=UDP SPT=45235 DPT=58049 LEN=354 
+[106548.529714] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51569 DF PROTO=UDP SPT=45235 DPT=58049 LEN=354 
+[106549.347338] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51740 DF PROTO=UDP SPT=43832 DPT=58049 LEN=354 
+[106549.347726] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=51741 DF PROTO=UDP SPT=43832 DPT=58049 LEN=354 
+[106668.329704] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54118 DF PROTO=UDP SPT=55272 DPT=53347 LEN=354 
+[106668.331117] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54119 DF PROTO=UDP SPT=55272 DPT=53347 LEN=354 
+[106668.545331] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54132 DF PROTO=UDP SPT=55272 DPT=53347 LEN=354 
+[106668.545338] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54133 DF PROTO=UDP SPT=55272 DPT=53347 LEN=354 
+[106669.353615] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54296 DF PROTO=UDP SPT=35414 DPT=53347 LEN=354 
+[106669.353990] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=54297 DF PROTO=UDP SPT=35414 DPT=53347 LEN=354 
+[106788.387692] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16204 DF PROTO=UDP SPT=42972 DPT=58341 LEN=354 
+[106788.388700] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16205 DF PROTO=UDP SPT=42972 DPT=58341 LEN=354 
+[106788.588604] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16238 DF PROTO=UDP SPT=42972 DPT=58341 LEN=354 
+[106788.588615] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16239 DF PROTO=UDP SPT=42972 DPT=58341 LEN=354 
+[106789.387247] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16287 DF PROTO=UDP SPT=46950 DPT=58341 LEN=354 
+[106789.387254] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=16288 DF PROTO=UDP SPT=46950 DPT=58341 LEN=354 
+[106908.440552] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=44409 DF PROTO=UDP SPT=47640 DPT=47049 LEN=354 
+[106908.440561] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=44410 DF PROTO=UDP SPT=47640 DPT=47049 LEN=354 
+[106908.640863] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=44431 DF PROTO=UDP SPT=47640 DPT=47049 LEN=354 
+[106908.640870] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=44432 DF PROTO=UDP SPT=47640 DPT=47049 LEN=354 
+[106909.437529] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=44601 DF PROTO=UDP SPT=54469 DPT=47049 LEN=354 
+[106909.437798] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=44602 DF PROTO=UDP SPT=54469 DPT=47049 LEN=354 
+[107028.487619] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60301 DF PROTO=UDP SPT=33685 DPT=49493 LEN=354 
+[107028.488298] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60302 DF PROTO=UDP SPT=33685 DPT=49493 LEN=354 
+[107028.687127] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60305 DF PROTO=UDP SPT=33685 DPT=49493 LEN=354 
+[107028.687136] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60306 DF PROTO=UDP SPT=33685 DPT=49493 LEN=354 
+[107029.498189] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60409 DF PROTO=UDP SPT=48467 DPT=49493 LEN=354 
+[107029.499156] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=60410 DF PROTO=UDP SPT=48467 DPT=49493 LEN=354 
+[107148.544506] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5458 DF PROTO=UDP SPT=39982 DPT=58207 LEN=354 
+[107148.545130] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5459 DF PROTO=UDP SPT=39982 DPT=58207 LEN=354 
+[107148.716875] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5483 DF PROTO=UDP SPT=39982 DPT=58207 LEN=354 
+[107148.716885] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5484 DF PROTO=UDP SPT=39982 DPT=58207 LEN=354 
+[107149.515928] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5527 DF PROTO=UDP SPT=54118 DPT=58207 LEN=354 
+[107149.516592] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=5528 DF PROTO=UDP SPT=54118 DPT=58207 LEN=354 
+[107268.522489] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29656 DF PROTO=UDP SPT=38343 DPT=54348 LEN=354 
+[107268.522848] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29657 DF PROTO=UDP SPT=38343 DPT=54348 LEN=354 
+[107268.723707] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29686 DF PROTO=UDP SPT=38343 DPT=54348 LEN=354 
+[107268.723719] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29687 DF PROTO=UDP SPT=38343 DPT=54348 LEN=354 
+[107269.525429] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29806 DF PROTO=UDP SPT=45966 DPT=54348 LEN=354 
+[107269.525438] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=29807 DF PROTO=UDP SPT=45966 DPT=54348 LEN=354 
+[107388.545544] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55120 DF PROTO=UDP SPT=45743 DPT=55116 LEN=354 
+[107388.546147] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55121 DF PROTO=UDP SPT=45743 DPT=55116 LEN=354 
+[107388.746191] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55128 DF PROTO=UDP SPT=45743 DPT=55116 LEN=354 
+[107388.746242] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55129 DF PROTO=UDP SPT=45743 DPT=55116 LEN=354 
+[107389.547947] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55193 DF PROTO=UDP SPT=41191 DPT=55116 LEN=354 
+[107389.548254] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=55194 DF PROTO=UDP SPT=41191 DPT=55116 LEN=354 
+[107508.595032] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6185 DF PROTO=UDP SPT=41749 DPT=40001 LEN=354 
+[107508.595855] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6186 DF PROTO=UDP SPT=41749 DPT=40001 LEN=354 
+[107508.796185] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6199 DF PROTO=UDP SPT=41749 DPT=40001 LEN=354 
+[107508.796192] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6200 DF PROTO=UDP SPT=41749 DPT=40001 LEN=354 
+[107509.594796] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6294 DF PROTO=UDP SPT=34036 DPT=40001 LEN=354 
+[107509.595213] [UFW BLOCK] IN=wlan0 OUT= MAC=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:08:00 SRC=192.168.8.109 DST=192.168.8.125 LEN=374 TOS=0x00 PREC=0x00 TTL=64 ID=6295 DF PROTO=UDP SPT=34036 DPT=40001 LEN=354 
+[108841.088480] input: MX Ergo S Plus Mouse as /devices/virtual/misc/uhid/0005:046D:B03E.0017/input/input105
+[108841.088590] hid-generic 0005:046D:B03E.0017: input,hidraw7: BLUETOOTH HID v0.13 Mouse [MX Ergo S Plus] on xx:xx:xx:xx:xx:xx

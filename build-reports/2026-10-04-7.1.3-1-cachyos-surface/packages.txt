@@ -1,0 +1,4 @@
+-rw-r--r-- 1 joey joey 172059262 Sep 20 20:56 linux-cachyos-surface-7.1.3-1-x86_64.pkg.tar.zst
+-rw-r--r-- 1 joey joey  41641607 Sep 20 20:56 linux-cachyos-surface-headers-7.1.3-1-x86_64.pkg.tar.zst
+88080de65b24e5f0209820895bfc3b1915ba557ab24abd275296746d34d5c8e7  linux-cachyos-surface-7.1.3-1-x86_64.pkg.tar.zst
+d688a5109b295ff6b897a1d1c9cf319708011acddfc40ab095223cd21604b775  linux-cachyos-surface-headers-7.1.3-1-x86_64.pkg.tar.zst

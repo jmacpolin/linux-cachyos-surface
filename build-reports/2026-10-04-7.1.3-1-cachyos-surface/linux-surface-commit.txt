@@ -1,0 +1,1 @@
+df5430f474d2923c4ff5da745aadbfd0fe4801d7 Sun Aug 30 10:43:43 2026 -0400 Bump arch kernel to v7.1.11-arch1
