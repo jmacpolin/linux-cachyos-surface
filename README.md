@@ -40,14 +40,22 @@ How it was verified (in a build container, not on the device):
 - On the patched tree, the `MT_QUIRK_*`, `MT_CLS_*`, `BTUSB_*` and int3472 GPIO type values have no duplicates.
 - All the drivers the patches touch compile with clang (147 objects across `hid`, `ithc`, `ipts`, `platform/surface`, `int3472`, `ipu-bridge`, `ov5693`, `ov13858`, `mwifiex`, `btusb`, PCI quirks and more), and the touched drivers have no warnings under `W=1`.
 
-Things to check on the device after installing it:
+To test it on the device, see [Testing on a Surface Pro 9](#testing-on-a-surface-pro-9). Keep the 7.1 kernel installed as a fallback.
 
-- the same checks as the 7.1 table below;
-- the front camera (`cam -c 1 --capture=10`, and look for `stream stop time out` in the kernel log);
-- the rear camera orientation;
-- the microphone.
+## Testing on a Surface Pro 9
 
-For the kernel log, use `journalctl -k -b --no-hostname` rather than `dmesg`; on this machine the `dmesg` buffer gets overwritten by firewall log lines. Keep the 7.1 kernel installed as a fallback.
+[`testing/sp9-test.sh`](testing/sp9-test.sh) runs the on-device checks and writes a report to `build-reports/<date>-<kernel>/`: `SUMMARY.md` with a PASS/WARN/FAIL line per automated check, `TESTED.md` with the manual checks, and the raw outputs behind them. Reboot first, so the journal holds the whole boot, then run these from the repository clone:
+
+```bash
+testing/sp9-test.sh collect          # ~1 min: right kernel and patches, drivers bound, devices present, kernel warnings
+testing/sp9-test.sh cameras          # ~1 min: both cameras stream; one frame each saved to ~/sp9-test-frames/
+testing/sp9-test.sh checklist        # guided manual checks (touch, pen, Type Cover, audio, ...); resumable
+testing/sp9-test.sh suspend 10 60    # ~15 min: 10 RTC-woken s2idle cycles, checking devices and S0ix residency after each
+testing/sp9-test.sh load             # optional, on AC: package power, fan and temperature per platform profile
+testing/sp9-test.sh drain            # optional, overnight on battery: battery drain per hour while suspended
+```
+
+The report leaves out the hostname and masks MAC/IP addresses and UUIDs. Camera frames stay in `~/sp9-test-frames/` and aren't part of the report. To share a report, commit its directory to a branch and push it, as the script shows when it finishes. The script works on any kernel, so running it on the 7.1 kernel too gives a like-for-like baseline.
 
 ## Tested hardware: Surface Pro 9 (Intel)
 
