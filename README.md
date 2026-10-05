@@ -59,9 +59,12 @@ testing/sp9-test.sh checklist        # guided manual checks (touch, pen, Type Co
 testing/sp9-test.sh suspend 10 60    # ~15 min: 10 RTC-woken s2idle cycles, checking devices and S0ix residency after each
 testing/sp9-test.sh load             # optional, on AC: package power, fan and temperature per platform profile
 testing/sp9-test.sh drain            # optional, overnight on battery: battery drain per hour while suspended
+testing/sp9-test.sh mic              # records silence then speech and compares the levels (recordings aren't kept)
+testing/sp9-test.sh fan              # 3 min of load in the performance profile, logging the reported fan speed
+testing/sp9-test.sh checklist --skipped   # asks again only the checklist items you skipped
 ```
 
-The report leaves out the hostname and masks MAC/IP addresses and UUIDs. Camera frames stay in `~/sp9-test-frames/` and aren't part of the report. To share a report, commit its directory to a branch and push it, as the script shows when it finishes. The script works on any kernel, so running it on the 7.1 fallback kernel too gives a like-for-like baseline.
+The report leaves out the hostname, your user name and the list of running apps, and masks MAC/IP addresses and UUIDs. Camera frames stay in `~/sp9-test-frames/` and aren't part of the report. To share a report, commit its directory to a branch and push it, as the script shows when it finishes. The script works on any kernel, so running it on the 7.1 fallback kernel too gives a like-for-like baseline.
 
 ## Tested hardware: Surface Pro 9 (Intel)
 
