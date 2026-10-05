@@ -2,12 +2,19 @@
 
 This repository includes the files needed to build an optimized CachyOS kernel including custom patches for Microsoft Surface devices. The patches are based on the work from the linux-surface repository. The patches have been updated to ensure compatibility with CachyOS's patches.
 
-The Microsoft Surface patches and per-version config fragment are pulled directly from the official [linux-surface/linux-surface](https://github.com/linux-surface/linux-surface) repository at build time. The git ref to check out is controlled by the `_surface_ref` variable in each `PKGBUILD`:
+This is a homebrew effort. CachyOS no longer ships a Surface kernel, and the official [linux-surface/linux-surface](https://github.com/linux-surface/linux-surface) project hasn't released patches for any 7.x kernel (its newest tag is `arch-6.19.8-3`). The `7.1` branch therefore uses a community port of the patches that hasn't been merged upstream yet.
 
-- `linux-cachyos-surface` builds against the pre-patched kernel tarball published by CachyOS at [CachyOS/linux/releases](https://github.com/CachyOS/linux/releases) (e.g. `cachyos-6.19.8-1.tar.gz`). This tarball is vanilla Linux with all the CachyOS base optimisations (BORE, BBR3, cachy, fixes, ntsync, t2, zstd, amd-cache-optimizer, …) pre-applied — it replaces the now-removed `0001-cachyos-base-all.patch` for kernel 6.18+. The packaging revision is selected by `_tagrel` (independent of this PKGBUILD's `pkgrel`). The linux-surface tag to check out is built from `_surface_ver` (kernel version part, defaults to `${pkgver}`) and `_surface_rel` (e.g. `3`), giving a default `_surface_ref="arch-${_surface_ver}-${_surface_rel}"`. **It's important to keep the CachyOS and linux-surface kernel versions aligned** — running a surface patch set built against a different point release can break hardware support (e.g. the touchscreen stopping working). `_surface_ver` is split out only as an escape hatch for the times the two projects publish different point releases; override it only when you've confirmed a near-version patch set still works.
+- `linux-cachyos-surface` builds against the pre-patched kernel tarball published by CachyOS at [CachyOS/linux/releases](https://github.com/CachyOS/linux/releases) (e.g. `cachyos-7.1.3-1.tar.gz`). This tarball is vanilla Linux with the CachyOS base patches (BBR3, cachy tweaks, fixes, ntsync, t2, zstd, amd-cache-optimizer, …) already applied. It replaces the `0001-cachyos-base-all.patch` meta-patch, which was removed for 6.18+. It does not include the BORE scheduler, so the default `cachyos` scheduler setting gives EEVDF, just like upstream `linux-cachyos`. `_tagrel` selects the CachyOS packaging revision, independently of this PKGBUILD's `pkgrel`. The Surface patches and the `surface-${_major}.config` fragment come from a single pinned commit, set by `_surface_repo` and `_surface_commit`. On this branch that's [`Apiznel/linux-surface@df5430f`](https://github.com/Apiznel/linux-surface/commit/df5430f474d2923c4ff5da745aadbfd0fe4801d7), the source branch of upstream PR [linux-surface/linux-surface#2178](https://github.com/linux-surface/linux-surface/pull/2178), which is the commit tested below. You can drop extra fixes into the package directory: a file named `override-<surface patch name>` replaces that Surface patch, and `local-*.patch` files are applied after the Surface patches. Both are applied with zero fuzz, so a changed upstream context fails the build instead of silently mis-applying.
 - `linux-cachyos-surface-lts` deliberately stays on a real kernel.org LTS line (currently Linux 6.12.x, supported by upstream LTS through approximately December 2026). It uses the stock kernel.org tarball plus the still-present `${_major}/all/0001-cachyos-base-all.patch` meta-patch from `cachyos/kernel-patches` — that meta-patch was retired for 6.18+ but remains available for 6.12. The PKGBUILD includes a commented-out template for the pre-baked tarball switch (along the lines used by the mainline variant) for the future kernel bump past 6.12. Its `_surface_ref` defaults to `master` because upstream's `arch_lts-*` tag series stopped at 4.19. Note: upstream `CachyOS/linux-cachyos`'s own `linux-cachyos-lts` variant has redefined "lts" to mean "previous stable cachyos kernel"; this repo intentionally keeps the original kernel.org-LTS meaning so Surface owners get the longest maintenance window per major bump.
 
-To bump the mainline kernel: pick a tag from [CachyOS/linux/releases](https://github.com/CachyOS/linux/releases) that **matches an available [linux-surface/linux-surface/tags](https://github.com/linux-surface/linux-surface/tags) kernel version**, then update `_major`/`_minor`/`_tagrel` and `_surface_rel`. With `_surface_ver` defaulting to `${pkgver}`, that's usually the only change needed. Only set `_surface_ver` explicitly if the two projects diverge on the point release for that month — and prefer waiting for them to realign, since mismatched versions can break Surface hardware (touchscreen, type cover, sensors). The patch set itself is discovered automatically from `patches/${_major}/*.patch` in the upstream repo.
+To bump the mainline kernel:
+
+1. Pick a release from [CachyOS/linux/releases](https://github.com/CachyOS/linux/releases) and set `_major`, `_minor` and `_tagrel`.
+2. Point `_surface_commit` at a linux-surface commit that has `patches/${_major}/` and `configs/surface-${_major}.config` for that kernel series. Prefer one rebased for the same or a nearby point release; mismatched patch sets can break Surface hardware (touchscreen, Type Cover, sensors).
+3. Run `makepkg -o` and read the `prepare()` output. Fuzz or rejects mean the patch set needs refreshing.
+4. Check for duplicate quirk values (`MT_QUIRK_*`, `MT_CLS_*`, `BTUSB_*`). A clean `patch` run doesn't catch them, and a collision silently mixes up two devices' quirks.
+
+Kernel options the base `config` doesn't set get their Kconfig defaults through `make olddefconfig`, so the build never stops to ask about new options.
 
 _**NOTE:** The configuration files and prebuilt kernels are optimized for X86_64_v3 instruction sets, this should be fine for most Surface devices, but might not work on very old (1st or 2nd gen) devices._
 
@@ -53,7 +60,7 @@ These kernel log messages appear on this machine and are harmless:
 - `surface_serial_hub serial0-0: event: unhandled event (... cid: 0x1a ...)`.
 - iptsd logs `Reading from file failed: Input/output error` and restarts on each resume.
 
-To reproduce this build, run `makepkg -si --skipinteg` in `linux-cachyos-surface/` on the `7.1` branch, and press Enter at each new-config-option prompt to accept the default. The PKGBUILD doesn't pin a commit; it builds the tip of `Apiznel/linux-surface`'s `7.1` branch. Check that the tip is still `df5430f` if you want exactly this build.
+To reproduce this build, run `makepkg -si` in `linux-cachyos-surface/` on the `7.1` branch. The PKGBUILD is pinned to `Apiznel/linux-surface@df5430f`, and the base `config` is the tested kernel's own `.config`, so the build doesn't ask any configuration questions. The build that was tested here was made before the pin: it pulled the tip of the same branch, which was `df5430f`, and its 168 new-option prompts were all answered with the defaults.
 
 ## Variants
 
@@ -73,9 +80,9 @@ To build the kernel and header files from source, run the following commands wit
 
 ```bash
 sudo pacman -S base-devel
-git clone https://github.com/jonpetersathan/linux-cachyos-surface
+git clone -b 7.1 https://github.com/jmacpolin/linux-cachyos-surface
 cd linux-cachyos-surface/linux-cachyos-surface
-makepkg -si --skipinteg
+makepkg -si
 ```
 
 Or alternatively using docker:
@@ -98,7 +105,7 @@ _**NOTE:** Per default the linux-cachyos-surface kernel is configured in LTO mod
 
 ### Install prebuilt packages
 
-You can also just install one of the prebuilt kernels by downloading the kernel and header files from [here](https://github.com/jonpetersathan/linux-cachyos-surface/releases) and run:
+This fork doesn't publish prebuilt packages. The original project's [releases](https://github.com/jonpetersathan/linux-cachyos-surface/releases) are older kernels built with the official linux-surface patches. To install one of those, download the kernel and header packages and run:
 
 ```bash
 sudo pacman -U linux-cachyos-surface-*.pkg.tar.zst

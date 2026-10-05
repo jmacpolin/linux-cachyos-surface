@@ -16,7 +16,8 @@
 # 'bore' - select 'Burst-Oriented Response Enhancer'
 # 'bmq' - select 'BMQ Scheduler'
 # 'hardened' - select 'BORE Scheduler hardened' ## kernel with hardened config and hardening patches with the bore scheduler
-# 'cachyos' - select 'CachyOS Default Scheduler (BORE)'
+# 'cachyos' - select 'CachyOS Default Scheduler' (EEVDF: the CachyOS/linux
+#             tarball does not ship BORE, so SCHED_BORE is a no-op here)
 # 'eevdf' - select 'EEVDF Scheduler'
 # 'rt' - select EEVDF, but includes a series of realtime patches
 # 'rt-bore' - select Burst-Oriented Response Enhancer, but includes a series of realtime patches
@@ -196,20 +197,16 @@ pkgrel=1
 _kernver="$pkgver-$pkgrel"
 _kernuname="${pkgver}-${_pkgsuffix}"
 
-# Kernel version part of the upstream linux-surface tag (e.g. 6.19.8).
-# Defaults to ${pkgver} so a single bump works when linux-surface and
-# CachyOS publish the same kernel point release; override when they
-# diverge (e.g. cachyos publishes 6.19.12 while linux-surface tops out at arch-6.19.8-3).
-# _surface_ver=6.19.8
-_surface_ver="${pkgver}"
-
-
-# Upstream linux-surface packaging revision. Tracks the trailing suffix on
-# upstream tags like `arch-6.19.8-3` (https://github.com/linux-surface/linux-surface/tags)
-_surface_rel=1
-_surface_ref="arch-${_surface_ver}-${_surface_rel}"
+# Surface patches and config fragment. Official linux-surface/linux-surface
+# has no 7.x patches, so this uses the community port from the still-unmerged
+# PR https://github.com/linux-surface/linux-surface/pull/2178
+# (Apiznel/linux-surface, branch 7.1), pinned to the commit that was tested on
+# a Surface Pro 9 (see "Tested hardware" in the README). To bump, move
+# _surface_commit and check the prepare() output for fuzz and rejects.
+_surface_repo="Apiznel/linux-surface"
+_surface_commit=df5430f474d2923c4ff5da745aadbfd0fe4801d7
 arch=('x86_64')
-url="https://github.com/jonpetersathan/linux-cachyos-surface"
+url="https://github.com/jmacpolin/linux-cachyos-surface"
 license=('GPL-2.0-only')
 options=('!strip' '!debug' '!lto')
 makedepends=(
@@ -229,9 +226,6 @@ makedepends=(
 )
 
 _patchsource="https://raw.githubusercontent.com/cachyos/kernel-patches/master/${_major}"
-_surface_repo_url="https://github.com/Apiznel/linux-surface.git#branch=7.1"
-_surface_raw_url="https://raw.githubusercontent.com/Apiznel/linux-surface/refs/heads/7.1"
-# "https://raw.githubusercontent.com/linux-surface/linux-surface/${_surface_ref}"
 _nv_ver=590.48.01
 _nv_pkg="NVIDIA-Linux-x86_64-${_nv_ver}"
 _nv_open_pkg="NVIDIA-kernel-module-source-${_nv_ver}"
@@ -239,8 +233,7 @@ makedepends+=(git)
 source=(
     "https://github.com/CachyOS/linux/releases/download/${_srcname}/${_srcname}.tar.gz"
     "config"
-    "${_surface_raw_url}/configs/surface-${_major}.config"
-    "linux-surface::git+${_surface_repo_url}"
+    "linux-surface::git+https://github.com/${_surface_repo}.git#commit=${_surface_commit}"
     )
 
 # LLVM makedepends
@@ -313,9 +306,7 @@ prepare() {
     echo "-$pkgrel" > localversion.10-pkgrel
     echo "${pkgbase#linux}" > localversion.20-pkgname
 
-    echo "Checking out linux-surface ref: ${_surface_ref}..."
-    git -C "$srcdir/linux-surface" checkout --quiet "7.1"
-    # "$_surface_ref"
+    echo "Using linux-surface patches from ${_surface_repo}@${_surface_commit}"
 
     local src
     for src in "${source[@]}"; do
@@ -325,22 +316,38 @@ prepare() {
         src="${src##*/}"
         src="${src%.zst}"
         [[ $src = *.patch ]] || continue
+        # Local surface overrides/additions are applied with the surface patches below
+        [[ $src = override-*.patch || $src = local-*.patch ]] && continue
         echo "Applying patch $src..."
         patch -Np1 < "../$src"
     done
 
     local _surface_patches_dir="$srcdir/linux-surface/patches/${_major}"
     if [ ! -d "$_surface_patches_dir" ]; then
-        _die "linux-surface patches directory not found: $_surface_patches_dir (is _major=${_major} supported upstream at ref ${_surface_ref}?)"
+        _die "linux-surface patches directory not found: $_surface_patches_dir (does ${_surface_repo}@${_surface_commit} have patches for ${_major}?)"
     fi
-    local p
+    # A local source named override-<patch name> replaces that surface patch,
+    # and local-*.patch sources are applied after the surface patch set. Both
+    # are applied without fuzz so a changed upstream context fails loudly.
+    local p name
     for p in "$_surface_patches_dir"/*.patch; do
-        echo "Applying surface patch ${p##*/}..."
-        patch -Np1 < "$p"
+        name="${p##*/}"
+        if [ -e "$srcdir/override-$name" ]; then
+            echo "Applying surface patch $name (local override)..."
+            patch -Np1 -F0 < "$srcdir/override-$name"
+        else
+            echo "Applying surface patch $name..."
+            patch -Np1 < "$p"
+        fi
+    done
+    for p in "$srcdir"/local-*.patch; do
+        [ -e "$p" ] || continue
+        echo "Applying local patch ${p##*/}..."
+        patch -Np1 -F0 < "$p"
     done
 
     echo "Setting config..."
-    ./scripts/kconfig/merge_config.sh -m ../config ../surface-${_major}.config
+    ./scripts/kconfig/merge_config.sh -m ../config "$srcdir/linux-surface/configs/surface-${_major}.config"
 
     ### Select CPU optimization
     if [ -n "$_processor_opt" ]; then
@@ -535,6 +542,9 @@ prepare() {
 
     ### Rewrite configuration
     echo "Rewrite configuration..."
+    # Take the Kconfig default for any option the base config doesn't set,
+    # instead of prompting for each one during 'make prepare'.
+    make "${BUILD_FLAGS[@]}" olddefconfig
     make "${BUILD_FLAGS[@]}" prepare
     yes "" | make "${BUILD_FLAGS[@]}" config >/dev/null
     diff -u ../config .config || :
@@ -815,6 +825,10 @@ for _p in "${pkgname[@]}"; do
 done
 
 b2sums=('SKIP'
-        '81fafd3adcaf3b690d8d4791693e68c7ae921d103ebfd70e8d0ae15cd05ecde5e6672ae43c3a7875686d883c1f5b82d2c8b37b40aee8dcb0563913f9dd6469b6'
-        'SKIP'
+        '7a0d1d7b504f342b0380352ab9bd98ee12530c7491783181dbafcaf2e7999d6224fed517b5ecc1be9a19a10f94e15fda38fafa41012d0cb3fd651e8f4ee8f6fc'
         'SKIP')
+
+# Sources appended conditionally above (LTO, ZFS, NVIDIA, schedulers,
+# profiles) are not checksummed; pad with SKIP so makepkg's integrity check
+# works without --skipinteg.
+while (( ${#b2sums[@]} < ${#source[@]} )); do b2sums+=('SKIP'); done

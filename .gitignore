@@ -1,0 +1,14 @@
+# makepkg build outputs inside the package directories
+*/src/
+*/pkg/
+*/linux-surface/
+*/zfs/
+*/cachyos-*.tar.gz
+*/*.tar.xz
+*/*.pkg.tar.zst
+*/*.log
+*/*.log.[0-9]*
+*/dkms-clang.patch
+*/surface-*.config
+# "Save configuration for later reuse" in prepare() writes these
+*/config-*-cachyos-surface*
