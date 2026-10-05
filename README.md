@@ -5,7 +5,7 @@ This repository includes the files needed to build an optimized CachyOS kernel i
 This is a homebrew effort. CachyOS no longer ships a Surface kernel, and the official [linux-surface/linux-surface](https://github.com/linux-surface/linux-surface) project hasn't released patches for any 7.x kernel (its newest tag is `arch-6.19.8-3`). So this repo builds on community ports of the patches that haven't been merged upstream yet. There are two branches:
 
 - **`7.2`** (this branch): CachyOS 7.2.9, with the community 7.2 patch set adapted for 7.2.9 and fixes for the Surface Pro 9 cameras. It builds and is verified as described below, but hasn't been tested on hardware yet.
-- **`7.1`**: CachyOS 7.1.3 with the 7.1 patch set. It's tested daily on a Surface Pro 9 (see [Tested hardware](#tested-hardware-surface-pro-9-intel)) and is the fallback if 7.2 misbehaves. Linux 7.1 itself is end-of-life upstream.
+- **`7.1`**: CachyOS 7.1.3 with the 7.1 patch set. It's tested daily on a Surface Pro 9 (see [Tested hardware](#tested-hardware-surface-pro-9-intel)) and is the fallback if 7.2 misbehaves. It installs as `linux-cachyos-surface-7.1`, alongside 7.2. Linux 7.1 itself is end-of-life upstream.
 
 - `linux-cachyos-surface` builds against the pre-patched kernel tarball published by CachyOS at [CachyOS/linux/releases](https://github.com/CachyOS/linux/releases) (e.g. `cachyos-7.2.9-2.tar.gz`). This tarball is vanilla Linux with the CachyOS base patches (BBR3, cachy tweaks, fixes, ntsync, t2, zstd, amd-cache-optimizer, …) already applied. It replaces the `0001-cachyos-base-all.patch` meta-patch, which was removed for 6.18+. It does not include the BORE scheduler, so the default `cachyos` scheduler setting gives EEVDF, just like upstream `linux-cachyos`. `_tagrel` selects the CachyOS packaging revision, independently of this PKGBUILD's `pkgrel`. The Surface patches and the `surface-${_major}.config` fragment come from a single pinned commit, set by `_surface_repo` and `_surface_commit`. On this branch that's [`Apiznel/linux-surface@6bcf30a`](https://github.com/Apiznel/linux-surface/commit/6bcf30a1f5387768f2a5068c7b4330a4f9eb3841), the source branch of upstream PR [linux-surface/linux-surface#2233](https://github.com/linux-surface/linux-surface/pull/2233), rebased for 7.2.4. You can drop extra fixes into the package directory: a file named `override-<surface patch name>` replaces that Surface patch, and `local-*.patch` files are applied after the Surface patches. Both are applied with zero fuzz, so a changed upstream context fails the build instead of silently mis-applying.
 - `linux-cachyos-surface-lts` deliberately stays on a real kernel.org LTS line (currently Linux 6.12.x, supported by upstream LTS through approximately December 2026). It uses the stock kernel.org tarball plus the still-present `${_major}/all/0001-cachyos-base-all.patch` meta-patch from `cachyos/kernel-patches` — that meta-patch was retired for 6.18+ but remains available for 6.12. The PKGBUILD includes a commented-out template for the pre-baked tarball switch (along the lines used by the mainline variant) for the future kernel bump past 6.12. Its `_surface_ref` defaults to `master` because upstream's `arch_lts-*` tag series stopped at 4.19. Note: upstream `CachyOS/linux-cachyos`'s own `linux-cachyos-lts` variant has redefined "lts" to mean "previous stable cachyos kernel"; this repo intentionally keeps the original kernel.org-LTS meaning so Surface owners get the longest maintenance window per major bump.
@@ -40,7 +40,13 @@ How it was verified (in a build container, not on the device):
 - On the patched tree, the `MT_QUIRK_*`, `MT_CLS_*`, `BTUSB_*` and int3472 GPIO type values have no duplicates.
 - All the drivers the patches touch compile with clang (147 objects across `hid`, `ithc`, `ipts`, `platform/surface`, `int3472`, `ipu-bridge`, `ov5693`, `ov13858`, `mwifiex`, `btusb`, PCI quirks and more), and the touched drivers have no warnings under `W=1`.
 
-To test it on the device, see [Testing on a Surface Pro 9](#testing-on-a-surface-pro-9). Keep the 7.1 kernel installed as a fallback.
+To test it on the device, see [Testing on a Surface Pro 9](#testing-on-a-surface-pro-9). Before relying on 7.2, set up the [7.1 fallback](#keeping-the-tested-71-kernel-as-a-fallback).
+
+## Keeping the tested 7.1 kernel as a fallback
+
+Both branches used to build a package named `linux-cachyos-surface`, so installing the 7.2 build removed the 7.1 kernel. [`fallback/linux-cachyos-surface-7.1`](fallback/linux-cachyos-surface-7.1/README.md) fixes that without recompiling. It takes the 7.1.3 packages you already built and tested, checks them against the tested build's sha256 sums, and installs the same kernel as `linux-cachyos-surface-7.1`. That package gets its own boot image and boot entry next to 7.2.
+
+The `7.1` branch now builds under the same `linux-cachyos-surface-7.1` name, so a rebuild from it also installs alongside 7.2 rather than replacing it. If no Surface kernel boots, the stock `linux-cachyos` and the official `linux-surface` kernels are independent packages and remain in the boot menu.
 
 ## Testing on a Surface Pro 9
 
@@ -55,7 +61,7 @@ testing/sp9-test.sh load             # optional, on AC: package power, fan and t
 testing/sp9-test.sh drain            # optional, overnight on battery: battery drain per hour while suspended
 ```
 
-The report leaves out the hostname and masks MAC/IP addresses and UUIDs. Camera frames stay in `~/sp9-test-frames/` and aren't part of the report. To share a report, commit its directory to a branch and push it, as the script shows when it finishes. The script works on any kernel, so running it on the 7.1 kernel too gives a like-for-like baseline.
+The report leaves out the hostname and masks MAC/IP addresses and UUIDs. Camera frames stay in `~/sp9-test-frames/` and aren't part of the report. To share a report, commit its directory to a branch and push it, as the script shows when it finishes. The script works on any kernel, so running it on the 7.1 fallback kernel too gives a like-for-like baseline.
 
 ## Tested hardware: Surface Pro 9 (Intel)
 
@@ -99,7 +105,7 @@ These kernel log messages appear on this machine and are harmless:
 - `surface_serial_hub serial0-0: event: unhandled event (... cid: 0x1a ...)`.
 - iptsd logs `Reading from file failed: Input/output error` and restarts on each resume.
 
-To reproduce this build, check out the `7.1` branch and run `makepkg -si` in `linux-cachyos-surface/`. The PKGBUILD is pinned to `Apiznel/linux-surface@df5430f`, and the base `config` is the tested kernel's own `.config`, so the build doesn't ask any configuration questions. The build that was tested here was made before the pin: it pulled the tip of the same branch, which was `df5430f`, and its 168 new-option prompts were all answered with the defaults.
+The quickest way to get this exact kernel back is the [fallback package](#keeping-the-tested-71-kernel-as-a-fallback), which reuses the tested build. To rebuild it from source instead, check out the `7.1` branch and run `makepkg -si` in `linux-cachyos-surface/`. The PKGBUILD is pinned to `Apiznel/linux-surface@df5430f`, and the base `config` is the tested kernel's own `.config`, so the build doesn't ask any configuration questions. A rebuild installs as `linux-cachyos-surface-7.1`, with kernel release `7.1.3-1-cachyos-surface-7.1`. The build that was tested here was made before the pin: it pulled the tip of the same branch, which was `df5430f`, and its 168 new-option prompts were all answered with the defaults.
 
 ## Variants
 

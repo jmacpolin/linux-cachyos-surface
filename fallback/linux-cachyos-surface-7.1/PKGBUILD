@@ -1,0 +1,78 @@
+# Repackages the linux-cachyos-surface 7.1.3 build that was tested on a
+# Surface Pro 9 under its own package name, so it can stay installed next to
+# newer linux-cachyos-surface builds as a fallback kernel.
+#
+# Both the 7.1 and 7.2 branches build a package called linux-cachyos-surface,
+# so installing one replaces the other. This takes the already-built 7.1
+# packages and installs the exact same kernel and modules as
+# linux-cachyos-surface-7.1. Only two things change: the pkgbase file (which
+# mkinitcpio and the bootloader hooks use to name /boot/vmlinuz-* and the
+# initramfs) and the name of the /usr/src symlink in the headers package. The
+# kernel release stays 7.1.3-1-cachyos-surface, which doesn't clash with newer
+# builds' module directories.
+#
+# Copy the two original packages into this directory, then run makepkg -si.
+# See README.md.
+
+_srcbase=linux-cachyos-surface
+_kernrel=7.1.3-1-cachyos-surface
+pkgbase=linux-cachyos-surface-7.1
+pkgname=("$pkgbase" "$pkgbase-headers")
+pkgver=7.1.3
+pkgrel=1
+pkgdesc='Surface Pro 9-tested linux-cachyos-surface 7.1.3 kernel, repackaged to install alongside newer builds'
+arch=('x86_64')
+url="https://github.com/jmacpolin/linux-cachyos-surface"
+license=('GPL-2.0-only')
+options=('!strip' '!debug' '!lto')
+source=("$_srcbase-$pkgver-$pkgrel-x86_64.pkg.tar.zst"
+        "$_srcbase-headers-$pkgver-$pkgrel-x86_64.pkg.tar.zst")
+noextract=("${source[@]}")
+# The packages built from this repo at fdab95a with Apiznel/linux-surface@df5430f
+# and tested on the Surface Pro 9; the hashes are from
+# build-reports/2026-10-04-7.1.3-1-cachyos-surface/packages.txt on the
+# 7.1-sp9-build-report branch.
+sha256sums=('88080de65b24e5f0209820895bfc3b1915ba557ab24abd275296746d34d5c8e7'
+            'd688a5109b295ff6b897a1d1c9cf319708011acddfc40ab095223cd21604b775')
+
+# Extract an original package into $pkgdir, leaving out its pacman metadata.
+_unpack() {
+    bsdtar -xpf "$srcdir/$1" -C "$pkgdir" \
+        --exclude .PKGINFO --exclude .BUILDINFO --exclude .MTREE \
+        --exclude .INSTALL --exclude .CHANGELOG
+}
+
+package_linux-cachyos-surface-7.1() {
+    pkgdesc='Surface Pro 9-tested linux-cachyos-surface 7.1.3 kernel and modules, repackaged to install alongside newer builds'
+    depends=('coreutils' 'kmod' 'initramfs')
+    optdepends=('wireless-regdb: to set the correct wireless channels of your country'
+                'linux-firmware: firmware images needed for some devices'
+                'scx-scheds: to use sched-ext schedulers')
+    provides=(VIRTUALBOX-GUEST-MODULES WIREGUARD-MODULE KSMBD-MODULE V4L2LOOPBACK-MODULE NTSYNC-MODULE VHBA-MODULE ADIOS-MODULE)
+
+    _unpack "$_srcbase-$pkgver-$pkgrel-x86_64.pkg.tar.zst"
+
+    local modulesdir="$pkgdir/usr/lib/modules/$_kernrel"
+    if [ ! -f "$modulesdir/vmlinuz" ] || [ ! -f "$modulesdir/pkgbase" ]; then
+        error "Unexpected package layout: no vmlinuz/pkgbase in usr/lib/modules/$_kernrel"
+        return 1
+    fi
+    # mkinitcpio and the bootloader hooks name /boot/vmlinuz-<pkgbase> and the
+    # initramfs after this, so the 7.1 kernel gets its own boot images.
+    echo "$pkgbase" > "$modulesdir/pkgbase"
+}
+
+package_linux-cachyos-surface-7.1-headers() {
+    pkgdesc='Headers and scripts for building modules for the Surface Pro 9-tested linux-cachyos-surface 7.1.3 kernel'
+    depends=('pahole' "$pkgbase" 'clang' 'llvm' 'lld')
+
+    _unpack "$_srcbase-headers-$pkgver-$pkgrel-x86_64.pkg.tar.zst"
+
+    if [ ! -L "$pkgdir/usr/src/$_srcbase" ] || [ ! -d "$pkgdir/usr/lib/modules/$_kernrel/build" ]; then
+        error "Unexpected headers layout: no usr/src/$_srcbase link or modules/$_kernrel/build"
+        return 1
+    fi
+    # The link is relative (../lib/modules/<kver>/build), so renaming it in
+    # place keeps it valid.
+    mv "$pkgdir/usr/src/$_srcbase" "$pkgdir/usr/src/$pkgbase"
+}

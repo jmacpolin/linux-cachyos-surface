@@ -299,25 +299,34 @@ report_hint() {
 
 cmd_collect() {
     need_sudo
-    local sys="$OUT/system" v drv f n missing
+    local sys="$OUT/system" v drv f n missing pkg
     mkdir -p "$sys"
     section collect "System snapshot ($(date '+%F %H:%M'))"
 
-    # --- which kernel is this
+    # --- which kernel is this. The package that installed the running kernel
+    # is named in its pkgbase file (e.g. linux-cachyos-surface, or
+    # linux-cachyos-surface-7.1 for the fallback package).
+    pkg=$(readf "/usr/lib/modules/$KREL/pkgbase")
     {
         uname -srvmo
         readf /proc/version
         echo
-        have pacman && pacman -Qi linux-cachyos-surface 2>/dev/null | grep -E '^(Name|Version|Build Date|Install Date|Packager)'
+        echo "package: ${pkg:-unknown}"
+        have pacman && [ -n "$pkg" ] && pacman -Qi "$pkg" 2>/dev/null | grep -E '^(Name|Version|Build Date|Install Date|Packager)'
         echo
         echo "cmdline: $(readf /proc/cmdline)"
     } | mask > "$sys/kernel.txt"
-    v=$(pacman -Q linux-cachyos-surface 2>/dev/null | awk '{print $2}')
-    if [ -n "$v" ] && [ "${KREL#"$v"}" != "$KREL" ]; then
-        result PASS "Running linux-cachyos-surface" "$KREL (package $v)"
-    else
-        result WARN "Running linux-cachyos-surface" "running $KREL, installed package ${v:-none}"
-    fi
+    v=
+    [ -n "$pkg" ] && v=$(pacman -Q "$pkg" 2>/dev/null | awk '{print $2}')
+    case "$pkg" in
+        linux-cachyos-surface*)
+            if [ -n "$v" ] && [ "${KREL#"$v"}" != "$KREL" ]; then
+                result PASS "Running a linux-cachyos-surface kernel" "$KREL (package $pkg $v)"
+            else
+                result WARN "Running a linux-cachyos-surface kernel" "running $KREL, package $pkg is ${v:-not installed}"
+            fi ;;
+        *) result WARN "Running a linux-cachyos-surface kernel" "running $KREL from package ${pkg:-unknown}" ;;
+    esac
 
     if [ -r /proc/config.gz ]; then
         zcat /proc/config.gz > "$sys/kernel.config"

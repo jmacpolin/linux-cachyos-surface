@@ -12,3 +12,7 @@
 */surface-*.config
 # "Save configuration for later reuse" in prepare() writes these
 */config-*-cachyos-surface*
+# fallback/ repackaging: the original packages copied in, and makepkg outputs
+fallback/*/*.pkg.tar.zst
+fallback/*/src/
+fallback/*/pkg/
